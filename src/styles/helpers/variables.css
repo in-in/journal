@@ -1,0 +1,6 @@
+:root {
+  --mainColor: skyblue;
+  --accentColor: hotpink;
+}
+
+@custom-media --m (width >= 720px);
