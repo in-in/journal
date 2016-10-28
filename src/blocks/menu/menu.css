@@ -1,0 +1,7 @@
+.menu {
+  background-color: pink;
+}
+
+.menu__link:focus {
+  outline: 1px solid red;
+}
