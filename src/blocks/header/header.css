@@ -3,7 +3,7 @@
 }
 
 .header__logo {
-  position: relative;
+  display: block;
   margin: 0 auto;
   margin-bottom: -25px;
   width: 137px;

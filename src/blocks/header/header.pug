@@ -3,7 +3,7 @@ include ../logo/logo
 
 mixin header()
   header.header&attributes(attributes)
-    .header__logo
+    a(href='index.html', role='banner', tabindex='0').header__logo
       +logo()
     .header__menu
       +menu(getData('menu'))
