@@ -1,6 +1,16 @@
 .menu {
   margin: 0 auto;
+  height: 72px;
   background-color: seagreen;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
 }
 
 .menu__list::before {
@@ -9,16 +19,9 @@
   content: '';
 }
 
-.menu__list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .menu__item {
-  padding-right: 2.136752vw;
-  padding-left: 2.136752vw;
+  padding-right: 2.1368vw;
+  padding-left: 2.1368vw;
 }
 
 .menu__item:first-child {
@@ -43,12 +46,8 @@
   outline: 1px solid red;
 }
 
-@media (--m) {
+/* @media (--m) {
   .menu {
-    background-color: tan;
+    background-color: cornflowerblue;
   }
-}
-
-.logo {
-  fill: crimson;
-}
+} */

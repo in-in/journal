@@ -1,3 +1,11 @@
 .header {
   background-color: skyblue;
 }
+
+.header__logo {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: -25px;
+  width: 137px;
+  background-color: gold;
+}
