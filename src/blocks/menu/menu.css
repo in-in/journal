@@ -1,6 +1,7 @@
 .menu {
   margin: 0 auto;
-  height: 72px;
+  /* height: 72px; */
+  height: 5.5385vw;
   background-color: seagreen;
 }
 
@@ -14,14 +15,17 @@
 }
 
 .menu__list::before {
+  display: block;
   flex-grow: 1;
   order: 5;
+  height: 100%;
   content: '';
 }
 
 .menu__item {
   padding-right: 2.1368vw;
   padding-left: 2.1368vw;
+  outline: 1px solid;
 }
 
 .menu__item:first-child {
@@ -39,7 +43,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: .875rem;
+  font-size: .875em;
 }
 
 .menu__link:focus {
