@@ -315,7 +315,9 @@
 
     "root-no-standard-properties": true,
 
-    "rule-nested-empty-line-before": "never",
+    "rule-nested-empty-line-before": ["always", {
+      "except": ["first-nested"]
+      }],
     "rule-non-nested-empty-line-before": "always",
 
     "media-feature-colon-space-after": "always",

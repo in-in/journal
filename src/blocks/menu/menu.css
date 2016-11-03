@@ -1,6 +1,5 @@
 .menu {
   margin: 0 auto;
-  /* height: 72px; */
   height: 5.5385vw;
   background-color: seagreen;
 }
@@ -8,6 +7,7 @@
 .menu__list {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -16,9 +16,6 @@
 
 .menu__list::before {
   display: block;
-  flex-grow: 1;
-  order: 5;
-  height: 100%;
   content: '';
 }
 
@@ -50,8 +47,25 @@
   outline: 1px solid red;
 }
 
-/* @media (--m) {
-  .menu {
-    background-color: cornflowerblue;
+@media (--x) {
+  .menu__list {
+    justify-content: center;
   }
-} */
+
+  .menu__list::before {
+    flex-grow: 1;
+    order: 5;
+  }
+}
+
+@media (--m) {
+  .menu {
+    display: block;
+  }
+}
+
+@media (--s) {
+  .menu {
+    display: none;
+  }
+}

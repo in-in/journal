@@ -5,16 +5,15 @@
 .header__logo {
   display: block;
   margin: 0 auto;
-  width: 10.538462vw;
+  width: 10.5385vw;
   height: 5.5385vw;
   background-color: gold;
-  transition: all .5s ease;
+  transition: all .2s ease;
   will-change: transform;
 }
 
 @media (--x) {
   .header__logo {
-    /* margin-bottom: -5.5385vw; */
-    transform: translateY(100%);
+    margin-bottom: -5.5385vw;
   }
 }

@@ -2,7 +2,9 @@
   --white: #fff;
 }
 
-@custom-media --m (width >= 320px);
+@custom-media --s (width >= 320px);
+
+@custom-media --m (width >= 800px);
 
 @custom-media --x (width >= 1050px);
 
