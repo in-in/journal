@@ -1,4 +1,7 @@
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
   background-color: skyblue;
 }
 
@@ -12,8 +15,25 @@
   will-change: transform;
 }
 
+.header__menu {
+  width: 100%;
+}
+
+.header__menu-toggle {
+  display: flex;
+  align-items: center;
+  background-color: coral;
+}
+
 @media (--x) {
   .header__logo {
     margin-bottom: -5.5385vw;
+  }
+}
+
+@media (--m) {
+  .header {
+    flex-direction: column;
+    width: 100%;
   }
 }

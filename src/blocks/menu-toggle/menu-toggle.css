@@ -1,0 +1,12 @@
+.menu-toggle {
+  display: block;
+  border: none;
+  background-color: pink;
+  cursor: pointer;
+}
+
+@media (--m) {
+  .menu-toggle {
+    display: none;
+  }
+}
