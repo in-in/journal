@@ -5,6 +5,11 @@ function toogleMenu() {
   button.addEventListener('click', function () {
     menu.classList.toggle('menu--hide');
     this.classList.toggle('menu-toggle--close');
+    if (menu.classList.contains('menu--dropdown')) {
+      menu.classList.remove('menu--dropdown');
+    } else {
+      menu.classList.add('menu--dropdown');
+    }
   }, false);
 }
 
