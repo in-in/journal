@@ -4,6 +4,7 @@ function toogleMenu() {
 
   button.addEventListener('click', function () {
     menu.classList.toggle('menu--hide');
+    this.classList.toggle('menu-toggle--close');
   }, false);
 }
 

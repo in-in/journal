@@ -1,8 +1,41 @@
 .menu-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: .313rem; /* 5/16 */
+  width: 3.125rem; /* 50/16 */
+  height: 100%;
   border: none;
   background-color: pink;
+  color: blue;
   cursor: pointer;
+}
+
+.menu-toggle--close {
+  color: transparent;
+}
+
+.menu-toggle--close::before,
+.menu-toggle--close::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 80%;
+  height: 5px;
+  background-color: #fff;
+  content: '';
+}
+
+.menu-toggle--close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-toggle--close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 @media (--m) {

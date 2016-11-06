@@ -1,5 +1,5 @@
 .menu {
-  width: 300px;
+  width: 100%;
   background-color: tan;
 }
 
@@ -13,7 +13,9 @@
 }
 
 .menu__item {
-  /* outline: 1px solid; */
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+  text-align: center;
 }
 
 .menu__link {
@@ -31,18 +33,18 @@
 }
 
 .menu--hide {
-  /* display: none; */
+  display: none;
 }
 
 @media (--m) {
   .menu {
-    display: block;
-  }
-
-  .menu {
     margin: 0 auto;
     height: 5.5385vw;
     background-color: seagreen;
+  }
+
+  .menu--hide {
+    display: block;
   }
 
   .menu__list {

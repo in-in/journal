@@ -20,9 +20,7 @@
 }
 
 .header__menu-toggle {
-  display: flex;
-  align-items: center;
-  background-color: coral;
+  position: relative;
 }
 
 @media (--x) {
