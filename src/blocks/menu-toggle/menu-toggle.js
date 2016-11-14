@@ -7,7 +7,7 @@ function toogleMenu() {
     this.classList.toggle('menu-toggle--close');
     if (menu.classList.contains('menu--dropdown')) {
       menu.classList.remove('menu--dropdown');
-    } else {
+    }else {
       menu.classList.add('menu--dropdown');
     }
   }, false);

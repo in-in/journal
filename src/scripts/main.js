@@ -1,3 +1,5 @@
+// import Vue from 'vue'
+
 // (function ($) {
 //
 //   console.log('on air');
