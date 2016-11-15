@@ -3,13 +3,24 @@ import paths from '../paths';
 import gulpLoadPlugin from 'gulp-load-plugins';
 const $ = gulpLoadPlugin();
 
+
 const scripts = () => {
   return gulp.src(paths.scripts.watch)
-    .pipe($.eslint())
+    .pipe($.eslint({
+      globals: [
+        'Vue'
+      ]
+    }))
     .pipe($.eslint.format())
-    .pipe($.concat('scripts.js', {newLine: ';'}))
-    .pipe($.uglify())
+    .pipe($.babel())
+    .pipe($.concat('script.js', {newLine: ';'}))
+    // .pipe($.uglify())
     .pipe(gulp.dest(paths.scripts.dist));
 }
 
-export default scripts;
+const lib = () => {
+  return gulp.src(paths.scripts.lib)
+    .pipe(gulp.dest(paths.scripts.dist));
+}
+
+export { scripts, lib };
