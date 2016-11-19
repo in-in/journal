@@ -1,0 +1,10 @@
+block append templates
+  template(id='component2')
+    .component2-temp
+      button.component2-temp__button {{ buttonText }}
+
+mixin component2()
+  .component2
+    p component2
+    component2(button-text='button 1')
+    component2(button-text='button 2')

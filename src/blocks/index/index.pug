@@ -1,14 +1,8 @@
 include ../header/header
+include ../component1/component1.pug
+include ../component2/component2.pug
 
 mixin index()
   +header()
-  .wrap
-    .box1
-      button(
-        type='button',
-        :class='{"button--active": isActive}',
-        @click='isActive = !isActive'
-        ).button Click
-    .box2
-      template(id='text-temp')
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+  +component1()
+  +component2()

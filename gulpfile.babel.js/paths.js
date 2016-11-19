@@ -14,7 +14,11 @@ const paths = {
   scripts: {
     get src () { return `${paths.src}scripts/main.js`; },
     get dist () { return `${paths.dist}assets/scripts/`; },
-    get watch () { return [`${paths.src}**/*.js`, `!${paths.src}scripts/lib/*.js`]; },
+    get watch () { return [
+      `${paths.src}blocks/**/*.js`,
+      `${paths.src}scripts/**/*.js`,
+      `!${paths.src}scripts/lib/*.js`
+    ]; },
     get lib () { return `${paths.src}scripts/lib/*.js`; }
   },
   images: {
