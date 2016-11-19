@@ -16,9 +16,9 @@
 // toogleMenu();
 //
 
-const app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello World!'
-  }
-});
+// const menuToggle = new Vue({
+//   el: '.menu-toggle',
+//   data: {
+//     show: true
+//   }
+// });

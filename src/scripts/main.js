@@ -1,14 +1,10 @@
-// (function ($) {
-//
-//   console.log('on air');
-//
-// })(jQuery);
-console.log('main');
+Vue.component('texttemp', {
+  template: '#text-temp'
+});
 
-// function showFontSize() {
-//   const foo = document.querySelector('.foo');
-//   const fontSize = window.getComputedStyle(foo, null).getPropertyValue('font-size');
-//   console.log(fontSize);
-// }
-//
-// window.addEventListener('resize', showFontSize, false);
+const page = new Vue({
+  el: '.page',
+  data: {
+    isActive: false
+  }
+});
