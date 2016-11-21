@@ -1,7 +1,11 @@
+block append templates
+  template#menu-toggle
+    button(
+      type='button',
+      @click='menuShow = !menuShow',
+      :class='{"menu-toggle--close": !menuShow }'
+      ).menu-toggle
+      | {{buttonText}}
+
 mixin menu-toggle()
-  //- button(
-  //-   type='button',
-  //-   @click='show = !show',
-  //-   :class='{"menu-toggle--close": !show }'
-  //-   ).menu-toggle&attributes(attributes)
-  //-   | Menu
+  menu-toggle(button-text='Menu')&attributes(attributes)

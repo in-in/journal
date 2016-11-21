@@ -1,5 +1,5 @@
 block append templates
-  template(id='component1')
+  template#component1
     .component1-temp
       ul.component1-temp__list
         li.component1-temp__item item 1
@@ -7,6 +7,6 @@ block append templates
         li.component1-temp__item item 3
 
 mixin component1()
-  .component1
+  .component1&attributes(attributes)
     p component1
     component1
