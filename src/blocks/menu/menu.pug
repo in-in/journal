@@ -1,7 +1,10 @@
-mixin menu(list)
-  //- transition(name='fade')
-  //-   nav(role='navigation', v-if='show').menu&attributes(attributes)
-  //-     ul.menu__list
-  //-       each i, index in list
-  //-         li(style=`order: ${index + 1}`).menu__item
-  //-           a(href='#').menu__link= i
+block append templates
+  template#main-menu
+    //- nav(role='navigation', v-if='menuShow').menu
+    nav(role='navigation').menu
+      ul.menu__list
+        li(
+            v-for='(i, index) in items',
+            :style='{order: index + 1}'
+          ).menu__item
+          a(href='#').menu__link {{ i.message }} + {{ index }}
