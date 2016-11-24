@@ -1,7 +1,6 @@
 const page = new Vue({
   el: '.page',
   data: {
-    isActive: false,
-    menuShow: true
+    menuShow: false
   }
 });

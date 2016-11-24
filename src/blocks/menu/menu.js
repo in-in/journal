@@ -12,7 +12,7 @@ Vue.component('main-menu', {
         ['Subscribe'],
         ['Purchase']
       ]
-    }
+    };
   },
   props: {
     message: ''

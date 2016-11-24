@@ -1,11 +1,9 @@
 block append templates
   template#main-menu
-    //- nav(role='navigation').menu
-    nav(role='navigation', v-if="menuShow").menu
+    nav(role='navigation').menu
       ul.menu__list
         li(
             v-for='(i, index) in items',
             :style='{order: index + 1}'
           ).menu__item
           a(href='#').menu__link {{ i[0] }}
-      p foo + {{ message }}
