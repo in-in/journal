@@ -13,8 +13,5 @@ Vue.component('main-menu', {
         ['Purchase']
       ]
     };
-  },
-  props: {
-    message: ''
   }
 });

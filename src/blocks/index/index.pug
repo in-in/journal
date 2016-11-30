@@ -4,6 +4,8 @@ include ../component2/component2.pug
 
 mixin index()
   +header()
+  p {{ windowWidth }}
+  p {{ $data }}
   +component1()
   +component2('button1').component2-temp--light
   +component2('button2').component2-temp--dark
