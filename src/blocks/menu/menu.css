@@ -19,13 +19,19 @@
 }
 
 .menu__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  max-height: 3.125rem;
+  height: 9vh;
   background-color: coral;
   color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 300;
   font-size: .875em;
+  line-height: normal;
 }
 
 .menu__link:focus {
@@ -87,6 +93,12 @@
 
   .menu__item:last-child {
     padding-right: 0;
+  }
+
+  .menu__link {
+    min-height: 0;
+    max-height: none;
+    height: auto;
   }
 }
 

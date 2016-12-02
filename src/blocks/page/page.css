@@ -1,8 +1,6 @@
 .page {
   box-sizing: border-box;
   margin: 0 auto;
-  padding-right: 5vw;
-  padding-left: 5vw;
   min-width: 20rem; /* 320/16 */
   width: 100%;
   outline: 1px solid red;
@@ -15,6 +13,13 @@
 @media (--xl) {
   .page {
     font-size: 1.2377vw;
+  }
+}
+
+@media (--m) {
+  .page {
+    padding-right: 5vw;
+    padding-left: 5vw;
   }
 }
 

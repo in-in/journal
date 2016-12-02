@@ -9,6 +9,4 @@ mixin header()
     .header__menu-toggle
       +menu-toggle()
     .header__menu
-      //- +menu(getData('menu')).menu--hide
-      //- +menu(getData('menu'))
       main-menu(v-show='windowWidth > 800 || menuShow')

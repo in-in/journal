@@ -1,15 +1,14 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   background-color: skyblue;
 }
 
 .header__logo {
   display: block;
   margin: 0 auto;
-  width: 10.5385vw;
-  height: 5.5385vw;
+  width: 5.25rem; /* 84/16 */
+  height: 2.75rem; /* 44/16 */
   background-color: gold;
   transition: all .2s ease;
   will-change: transform;
@@ -33,5 +32,11 @@
   .header {
     flex-direction: column;
     width: 100%;
+  }
+
+  .header__logo {
+    width: 10.5385vw;
+    height: 5.5385vw;
+    background-color: pink;
   }
 }
