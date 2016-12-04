@@ -1,6 +1,5 @@
 .menu {
   width: 100%;
-  background-color: seagreen;
 }
 
 .menu__list {
@@ -25,7 +24,6 @@
   min-height: 2rem;
   max-height: 3.125rem;
   height: 9vh;
-  background-color: coral;
   color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
@@ -64,7 +62,6 @@
   .menu {
     margin: 0 auto;
     height: 5.5385vw;
-    background-color: seagreen;
   }
 
   .menu--hide {

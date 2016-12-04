@@ -4,7 +4,4 @@ block append templates
       type='button',
       @click.prevent='menuShow'
       ).menu-toggle
-      | {{buttonText}}
-
-mixin menu-toggle()
-  menu-toggle(button-text='Menu', :class='{"menu-toggle--close": menuShow }')&attributes(attributes)
+      | {{ buttonText }}
