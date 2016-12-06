@@ -3,12 +3,13 @@
   display: block;
   overflow: hidden;
   box-sizing: border-box;
-  padding: .357em .714em;
+  padding: .3em .7em;
   border: 1px solid currentColor;
   border-radius: 0;
   background-color: var(--bgButton);
   color: var(--whiteColor);
-  font-size: .875em;
+  font-weight: 600;
+  font-size: .813em;
   font-family: 'Open Sans', sans-serif;
   cursor: pointer;
   appearance: none;
@@ -24,9 +25,9 @@
   top: 50%;
   left: 50%;
   display: block;
-  width: 80%;
-  height: 5px;
-  background-color: #fff;
+  width: 50%;
+  height: .2em;
+  background-color: var(--whiteColor);
   content: '';
 }
 
@@ -36,10 +37,4 @@
 
 .menu-toggle--close::after {
   transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-@media (--m) {
-  .menu-toggle {
-    display: none;
-  }
 }

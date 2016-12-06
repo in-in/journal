@@ -1,8 +1,14 @@
 .header {
-  background-image: var(--mainGradient);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-image: var(--headerGradient);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 0 0 41.58px 12.42px rgba(0, 0, 0, .35);
 }
 
 .header__wrap {
@@ -32,8 +38,8 @@
   align-items: flex-start;
   justify-content: center;
   box-sizing: border-box;
-  padding-top: .375em;
-  padding-right: .375em;
+  padding-top: .5em;
+  padding-right: .5em;
   height: 100%;
 }
 
@@ -52,5 +58,9 @@
   .header__logo {
     width: 10.5385vw;
     height: 5.5385vw;
+  }
+
+  .header__menu-toggle {
+    display: none;
   }
 }

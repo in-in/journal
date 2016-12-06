@@ -3,12 +3,13 @@
   --mainColorLeft: #484289;
   --mainColorRight: #116987;
   --bgButton: #2d8cd3;
-  --mainGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)), color(var(--mainColorRight) a(80%)));
+  --headerGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)), color(var(--mainColorRight) a(78%)));
+  --carouselGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)), color(var(--mainColorRight) a(72%)));
 }
 
 @custom-media --s (width >= 320px);
 
-@custom-media --m (width >= 800px);
+@custom-media --m (width >= 801px);
 
 @custom-media --x (width >= 1050px);
 
