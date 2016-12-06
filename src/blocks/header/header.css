@@ -1,17 +1,21 @@
 .header {
-  display: flex;
-  flex-wrap: wrap;
   background-image: var(--mainGradient);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.header__wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header__logo {
   display: block;
   margin: 0 auto;
-  width: 5.25rem; /* 84/16 */
-  height: 2.75rem; /* 44/16 */
+  width: 5.25rem;
+  height: 2.75rem;
   transition: all .2s ease;
   will-change: transform;
 }
@@ -21,7 +25,16 @@
 }
 
 .header__menu-toggle {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: .375em;
+  padding-right: .375em;
+  height: 100%;
 }
 
 @media (--x) {

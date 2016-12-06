@@ -1,7 +1,8 @@
 :root {
-  --white: #fff;
+  --whiteColor: #fff;
   --mainColorLeft: #484289;
   --mainColorRight: #116987;
+  --bgButton: #2d8cd3;
   --mainGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)), color(var(--mainColorRight) a(80%)));
 }
 

@@ -24,16 +24,12 @@
   min-height: 2rem;
   max-height: 3.125rem;
   height: 9vh;
-  color: var(--white);
+  color: var(--whiteColor);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 300;
   font-size: .875em;
   line-height: normal;
-}
-
-.menu__link:focus {
-  outline: 1px solid red;
 }
 
 .menu--hide {

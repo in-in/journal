@@ -6,9 +6,10 @@ include ../menu/menu
 mixin header()
   header.header&attributes(attributes)
     +container()
-      a(href='index.html', role='banner', tabindex='0', aria-label='Journal').header__logo
-        +logo-use('logo')
-      .header__menu-toggle
-        menu-toggle(button-text='Menu', :class='{"menu-toggle--close": menuShow }')
-      .header__menu
-        main-menu(v-show='windowWidth > 800 || menuShow')
+      .header__wrap
+        a(href='index.html', role='banner', tabindex='0', aria-label='Journal').header__logo
+          +logo-use('logo')
+        .header__menu-toggle
+          menu-toggle(button-text='Menu', :class='{"menu-toggle--close": menuShow }')
+        .header__menu
+          main-menu(v-show='windowWidth > 800 || menuShow')
