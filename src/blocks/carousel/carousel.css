@@ -1,8 +1,27 @@
 .carousel {
   width: 100%;
   height: 44vw;
-  background-image: var(--carouselGradient), url(../images/bg-carousel.jpg);
+  /* background-image: var(--carouselGradient), url(../images/bg-carousel.jpg); */
+  background-image: url(https://satyr.io/1300x572/1?texture=graphpaper);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (--xl) {
+  .carousel {
+    background-image: url(http://satyr.io/1920x845/2?texture=graphpaper);
+  }
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+  .carousel {
+    background-image: url(http://satyr.io/2220x1845/3?texture=graphpaper);
+  }
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+  .carousel {
+    background-image: url(http://satyr.io/2220x1845/3?texture=graphpaper);
+  }
 }

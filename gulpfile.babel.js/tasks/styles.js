@@ -6,17 +6,17 @@ const $ = gulpLoadPlugin();
 import autoprefixer from 'autoprefixer';
 import atImport from 'postcss-easy-import';
 import customProperties from 'postcss-custom-properties';
+import mediaMinmax from 'postcss-media-minmax';
 import customMedia from 'postcss-custom-media';
 import colorFunction from 'postcss-color-function';
-import mediaMinmax from 'postcss-media-minmax';
 
 const processors = [
   atImport({glob: true}),
   customProperties(),
-  customMedia(),
   mediaMinmax(),
+  customMedia(),
   colorFunction(),
-  autoprefixer({browsers: ['last 3 version']})
+  autoprefixer({browsers: ['last 2 version']})
 ];
 
 const styles = () => {

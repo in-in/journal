@@ -1,8 +1,4 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
   width: 100%;
   background-image: var(--headerGradient);
   background-position: center;
@@ -51,6 +47,10 @@
 
 @media (--m) {
   .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
     flex-direction: column;
     width: 100%;
   }
