@@ -1,8 +1,12 @@
 .carousel {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 3em;
   width: 100%;
   height: 44vw;
   background-image: var(--carouselGradient), url(../images/bg-carousel.jpg);
@@ -41,23 +45,18 @@
   }
 }
 
-.carousel__item {
-  width: 500px;
-  background-color: dodgerblue;
-  color: #fff;
-}
-
-.carousel__arrow {
+.carousel__controls {
   position: absolute;
   width: 40px;
   height: 75px;
   background-color: #fff;
+  cursor: pointer;
 }
 
-.carousel__arrow--left {
+.carousel__controls--prev {
   left: 0;
 }
 
-.carousel__arrow--right {
+.carousel__controls--next {
   right: 0;
 }

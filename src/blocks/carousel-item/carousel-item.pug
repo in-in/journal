@@ -1,0 +1,6 @@
+block append templates
+  template#carousel-item
+    transition(:name='transitionDirection')
+      .carousel-item(v-show='visible')
+        span index: {{index}} 
+        slot
