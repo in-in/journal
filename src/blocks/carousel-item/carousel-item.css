@@ -1,7 +1,11 @@
 .carousel-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 500px;
   background-color: dodgerblue;
   color: #fff;
+  transform: translate(-50%, -50%);
 }
 
 /* carousel-item-right */
@@ -11,31 +15,30 @@
 }
 
 .carousel-item-right-leave-active {
-  position: absolute;
   animation: carouselRightOut .5s;
 }
 
 @keyframes carouseRightlIn {
   from {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translate(0, -50%);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 }
 
 @keyframes carouselRightOut {
   from {
     opacity: 1;
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 
   to {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translate(-100%, -50%);
   }
 }
 
@@ -46,30 +49,29 @@
 }
 
 .carousel-item-left-leave-active {
-  position: absolute;
   animation: carouselLefttOut .5s;
 }
 
 @keyframes carouseLeftlIn {
   from {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translate(-100%, -50%);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 }
 
 @keyframes carouselLefttOut {
   from {
     opacity: 1;
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 
   to {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translate(0, -50%);
   }
 }
