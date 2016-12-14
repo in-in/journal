@@ -5,4 +5,9 @@ body {
 :focus {
   outline-width: 1px;
   outline-style: dotted;
+  outline-color: var(--whiteColor);
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }

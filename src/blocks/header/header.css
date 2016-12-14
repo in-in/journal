@@ -40,12 +40,6 @@
 }
 
 @media (--x) {
-  .header__logo {
-    margin-bottom: -5.5385vw;
-  }
-}
-
-@media (--m) {
   .header {
     position: absolute;
     top: 0;
@@ -55,6 +49,12 @@
     width: 100%;
   }
 
+  .header__logo {
+    margin-bottom: -5.5385vw;
+  }
+}
+
+@media (--m) {
   .header__logo {
     width: 10.5385vw;
     height: 5.5385vw;
