@@ -24,6 +24,10 @@ const paths = {
   images: {
     get src () { return `${paths.src}assets/images/*.*`; },
     get dist () { return `${paths.dist}assets/images/`; }
+  },
+  svgSprite: {
+    get src () { return `${paths.src}assets/svg/*.*`; },
+    get dist () { return `${paths.src}blocks/svgSprite/`; }
   }
 }
 
