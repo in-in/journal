@@ -5,3 +5,22 @@
 .button--active {
   background-color: tomato;
 }
+
+/* .myicon .icon {
+  display: block;
+  width: 80px;
+  fill: red;
+  stroke: green;
+} */
+
+.myicon3 .icon {
+  display: block;
+  width: 12px;
+  stroke: blue;
+}
+
+.myicon4 .icon {
+  display: block;
+  width: 100px;
+  background-color: gray;
+}

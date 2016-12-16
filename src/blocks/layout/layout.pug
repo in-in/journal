@@ -1,12 +1,10 @@
 include ../page/page
 include ../scripts/scripts
-include ../logo/logo
 
 doctype html
 html(lang='en')
   include ../head/head
   +page
-    +logo()
     block content
   block templates
   +scripts(['vue.js', 'script.js'])

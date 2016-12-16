@@ -1,5 +1,5 @@
 include ../container/container
-include ../logo/logo
+include ../icon/icon
 include ../menu-toggle/menu-toggle
 include ../menu/menu
 
@@ -8,7 +8,7 @@ mixin header()
     +container()
       .header__wrap
         a(href='index.html', role='banner', tabindex='0', aria-label='Journal').header__logo
-          +logo-use('logo')
+          +icon('logo', '170.19516', '25.436251').logo
         .header__menu-toggle
           menu-toggle(button-text='Menu', :class='{"menu-toggle--close": menuShow }')
         .header__menu
