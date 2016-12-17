@@ -7,6 +7,9 @@ const config = {
   'shape': {
     'id': {
       'generator': 'icon-'
+    },
+    'dimension': {
+      'attributes': true
     }
   },
   'transform': [

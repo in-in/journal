@@ -1,3 +1,5 @@
+include ../icon/icon
+
 block append templates
   template#carousel
     .carousel
@@ -5,8 +7,10 @@ block append templates
         type='button',
         @click.prevent='prev'
         ).carousel__controls.carousel__controls--prev
+        +icon('arrow', 12, 20).carousel__icon.carousel__icon--prev
       button(
         type='button',
         @click.prevent='next'
         ).carousel__controls.carousel__controls--next
+        +icon('arrow', 12, 20).carousel__icon.carousel__icon--next
       slot

@@ -9,12 +9,9 @@ mixin index()
   +main()
   pre {{ $data }}
   p icon here:
-  .myicon
-    +icon('arrow')
   .myicon3
-    +icon('arrow3', 12, 20)
-  .myicon4
-    +icon('logo')
+    +icon('arrow', 12, 20)
+    +icon('arrow')
   +component1()
   +component2('button1').component2-temp--light
   +component2('button2').component2-temp--dark
