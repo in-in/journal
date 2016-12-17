@@ -2,7 +2,7 @@ include ../icon/icon
 
 block append templates
   template#carousel
-    .carousel
+    section.carousel(role='region', aria-label='Most Read Posts')
       button(
         type='button',
         @click.prevent='prev'
