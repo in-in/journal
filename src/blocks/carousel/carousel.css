@@ -148,9 +148,9 @@
 
 .carousel__icon {
   display: block;
-  width: .75rem; /* 12/16 */
+  width: .75rem;
   stroke: var(--bgButton);
-  stroke-width: .125rem; /* 2/16 */
+  stroke-width: .125rem;
 }
 
 .carousel__icon--prev {

@@ -7,12 +7,13 @@ import { scripts } from './scripts';
 import images from './images';
 import svgSprite from './svgSprite';
 
-const watch = () => {
+const watch = (done) => {
   gulp.watch(paths.templates.watch, templates);
   gulp.watch(paths.styles.watch, gulp.series(styles, stylelint));
   gulp.watch(paths.scripts.watch, scripts);
   gulp.watch(paths.images.src, images);
   gulp.watch(paths.svgSprite.src, svgSprite);
+  done();
 }
 
 export default watch;
