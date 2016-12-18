@@ -3,7 +3,7 @@ import paths from '../paths';
 import templates from './templates';
 import styles from './styles';
 import stylelint from './stylelint';
-import { scripts } from './scripts';
+import {scripts} from './scripts';
 import images from './images';
 import svgSprite from './svgSprite';
 

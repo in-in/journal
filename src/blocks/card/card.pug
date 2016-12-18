@@ -1,0 +1,12 @@
+include ../icon/icon
+
+block append templates
+  template#card
+    article.card
+      .card__image
+      .card__body
+        h4.card__title Card Title
+        p.card__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid doloribus repellendus repudiandae atque nulla corporis libero vero at, voluptate assumenda.
+        .card__button-group
+          button(type='button').card__button Read More
+            +icon('arrow2', 14, 10).card__icon
