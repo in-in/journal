@@ -6,7 +6,7 @@
   padding: .3em .7em;
   border: 1px solid currentColor;
   border-radius: 0;
-  background-color: var(--buttonColor);
+  background-color: var(--accentColor);
   color: var(--whiteColor);
   font-weight: 600;
   font-size: .813em;

@@ -150,7 +150,7 @@
 .carousel__icon {
   display: block;
   width: .75rem;
-  stroke: var(--buttonColor);
+  stroke: var(--accentColor);
   stroke-width: .125rem;
 }
 
