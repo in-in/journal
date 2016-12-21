@@ -28,7 +28,6 @@
 
 @media (--xl) {
   .carousel {
-    background: none;
     background-image: var(--carouselGradient), url(../images/bg-carousel-xl.jpg);
   }
 }

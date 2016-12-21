@@ -1,18 +1,18 @@
 .card {
   display: flex;
-  width: 54.6154vw;
-  height: 20.377vw;
-  border-radius: 10px;
+  width: 44.375em;
+  height: 16.563em;
+  border-radius: .625em;
   background-color: #fff;
-  box-shadow: 0 0 50px 5px rgba(0, 0, 0, .35);
+  box-shadow: 0 0 3.125em .313em rgba(0, 0, 0, .35);
 }
 
 .card__image {
   overflow: hidden;
-  min-width: 23.0769vw;
+  min-width: 18.75em;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: .625em;
+  border-bottom-left-radius: .625em;
   background-image: url(http://satyr.io/300x264/1);
   background-position: center;
   background-size: cover;
@@ -23,11 +23,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 43px;
-  padding-right: 25px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  background-color: skyblue;
+  padding-top: 2.688em;
+  padding-right: 1.563em;
+  padding-bottom: 1.563em;
+  padding-left: 1.563em;
   text-align: center;
 }
 
@@ -68,17 +67,17 @@
 
 .card__title {
   margin: 0;
-  margin-bottom: .75em; /* 15/20 */
-  background-color: gold;
+  margin-bottom: .75em;
   font-weight: 600;
-  font-size: 1.25em; /* 20/16 */
+  font-size: 1.25em;
 }
 
 .card__desc {
+  overflow: hidden;
   margin: 0;
-  background-color: lime;
+  height: 6.6em;
   color: var(--cardDesc);
-  font-size: .875em; /* 14/16 */
+  font-size: .875em;
   line-height: 2.2;
 }
 
@@ -86,28 +85,38 @@
   display: flex;
   justify-content: center;
   margin-top: auto;
-  background-color: pink;
 }
 
 .card__button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 1.667em; /* 20/12 */
-  padding-left: 1.667em; /* 20/12 */
-  height: 3.333em; /* 40/12 */
+  padding-right: 1.667em;
+  padding-left: 1.667em;
+  height: 3.333em;
   border: 1px solid var(--accentColor);
   background: none;
   color: var(--accentColor);
   text-transform: uppercase;
-  font-size: .75em; /* 12/16 */
+  font-size: .75em;
   font-family: 'Open Sans', sans-serif;
   cursor: pointer;
 }
 
 .card__icon {
   display: block;
-  margin-left: 7px;
-  width: 14px;
+  margin-left: .583em;
+  width: 1.167em;
   fill: var(--accentColor);
+}
+
+@media (--xl) {
+  .card {
+    width: 54.6154vw;
+    height: 20.377vw;
+  }
+
+  .card__image {
+    min-width: 23.0769vw;
+  }
 }

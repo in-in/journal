@@ -1,6 +1,10 @@
 const paths = {
   dist: 'dist/',
   src: 'src/',
+  assets: {
+    get src () { return `${paths.src}assets/{fonts,favicon}/*.*`; },
+    get dist () { return `${paths.dist}assets/`; }
+  },
   templates: {
     get src () { return `${paths.src}pages/*.pug`; },
     get dist () { return paths.dist; },
