@@ -27,6 +27,7 @@
   padding-right: 1.563em;
   padding-bottom: 1.563em;
   padding-left: 1.563em;
+  width: 100%;
   text-align: center;
 }
 
@@ -35,9 +36,6 @@
   top: 0;
   right: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
@@ -62,7 +60,10 @@
 
 .card__tag span {
   position: absolute;
+  top: 50%;
+  left: 50%;
   z-index: 2;
+  transform: translate(-50%, -50%);
 }
 
 .card__title {
@@ -88,9 +89,6 @@
 }
 
 .card__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-right: 1.667em;
   padding-left: 1.667em;
   height: 3.333em;
@@ -101,6 +99,12 @@
   font-size: .75em;
   font-family: 'Open Sans', sans-serif;
   cursor: pointer;
+}
+
+.card__button-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__icon {
