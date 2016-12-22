@@ -6,7 +6,10 @@ mixin main()
   main.main&attributes(attributes)
     carousel(v-if='windowWidth > 800')
       carousel-item
-        card
+        card 
+          template(slot='card-tag') travel
+          template(slot='card-title') {{content[0].title}}
+          template(slot='card-desc') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid doloribus repellendus repudiandae atque nulla corporis libero vero at, voluptate assumenda.
       carousel-item
         span carousel-item2
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

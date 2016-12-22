@@ -7,9 +7,12 @@ block append templates
       .card__body
         .card__tag
           +icon('tag', 188, 32).card__tag-bg
-          span travel
-        h4.card__title Best things to do while traveling
-        p.card__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid doloribus repellendus repudiandae atque nulla corporis libero vero at, voluptate assumenda.
+          span
+            slot(name='card-tag')
+        h4.card__title
+          slot(name='card-title')
+        p.card__desc
+          slot(name='card-desc')
         .card__button-group
           button(type='button').card__button 
             div.card__button-wrap

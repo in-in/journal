@@ -2,7 +2,13 @@ const page = new Vue({
   el: '.page',
   data: {
     windowWidth: 0,
-    menuShow: false
+    menuShow: false,
+    content: [
+      {
+        title: 'foo',
+        desc: 'bar'
+      }
+    ]
   },
   mounted() {
     this.$nextTick(function () {
