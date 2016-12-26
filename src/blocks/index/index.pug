@@ -2,16 +2,10 @@ include ../header/header
 include ../main/main
 include ../component1/component1.pug
 include ../component2/component2.pug
-include ../icon/icon
 
 mixin index()
   +header()
   +main()
-  pre {{ $data }}
-  p icon here:
-  .myicon3
-    +icon('arrow', 12, 20)
-    +icon('arrow')
   +component1()
   +component2('button1').component2-temp--light
   +component2('button2').component2-temp--dark

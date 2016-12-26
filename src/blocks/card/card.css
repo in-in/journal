@@ -10,7 +10,7 @@
 .card__image {
   overflow: hidden;
   min-width: 18.75em;
-  width: 100%;
+  width: auto;
   border-top-left-radius: .625em;
   border-bottom-left-radius: .625em;
   background-image: url(http://satyr.io/300x264/1);
@@ -67,16 +67,19 @@
 }
 
 .card__title {
+  overflow: hidden;
   margin: 0;
   margin-bottom: .75em;
+  max-height: 3.6em;
   font-weight: 600;
   font-size: 1.25em;
+  line-height: 1.8;
 }
 
 .card__desc {
   overflow: hidden;
   margin: 0;
-  height: 6.6em;
+  max-height: 6.6em;
   color: var(--cardDesc);
   font-size: .875em;
   line-height: 2.2;
