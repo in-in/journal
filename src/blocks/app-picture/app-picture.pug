@@ -1,0 +1,15 @@
+block append templates
+  template#app-picture
+    picture.app-picture
+      source(
+        :srcset=`path + img + 'xl.jpg, '
+          + path + img + 'xl@2.jpg 2x, '
+          + path + img + 'xl@3.jpg 3x'`,
+        media='(min-width: 1300px)'
+      )
+      img(
+        :srcset=`path + img + '.jpg, '
+          + path + img + '@2.jpg 2x, '
+          + path + img + '@3.jpg 3x'`
+        alt=''
+      ).app-picture__img

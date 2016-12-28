@@ -1,0 +1,8 @@
+.app-picture,
+.app-picture__img {
+  display: block;
+}
+
+.app-picture__img {
+  width: 100%;
+}
