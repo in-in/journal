@@ -9,10 +9,10 @@ block append templates
         ).carousel__controls.carousel__controls--prev
         .carousel__controls-wrap
           +icon('arrow', 12, 20).carousel__icon.carousel__icon--prev
+      slot
       button(
         type='button',
         @click.prevent='next'
         ).carousel__controls.carousel__controls--next
         .carousel__controls-wrap
           +icon('arrow', 12, 20).carousel__icon.carousel__icon--next
-      slot

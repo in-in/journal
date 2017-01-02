@@ -1,10 +1,3 @@
-.carousel-item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* carousel-item-right */
 
 .carousel-item-right-enter-active {
@@ -12,18 +5,21 @@
 }
 
 .carousel-item-right-leave-active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   animation: carouselRightOut .5s;
 }
 
 @keyframes carouseRightlIn {
   from {
     opacity: 0;
-    transform: translate(0, -50%);
+    transform: translateX(50%);
   }
 
   to {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translateX(0);
   }
 }
 
@@ -46,18 +42,21 @@
 }
 
 .carousel-item-left-leave-active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   animation: carouselLefttOut .5s;
 }
 
 @keyframes carouseLeftlIn {
   from {
     opacity: 0;
-    transform: translate(-100%, -50%);
+    transform: translateX(-50%);
   }
 
   to {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translateX(0);
   }
 }
 
