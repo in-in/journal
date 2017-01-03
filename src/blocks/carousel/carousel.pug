@@ -2,17 +2,17 @@ include ../icon/icon
 
 block append templates
   template#carousel
-    section.carousel(role='region', aria-label='Most Read Posts')
+    section.carousel(aria-label='Most Read Posts')
       button(
         type='button',
         @click.prevent='prev'
         ).carousel__controls.carousel__controls--prev
-        .carousel__controls-wrap
+        i.carousel__controls-wrap
           +icon('arrow', 12, 20).carousel__icon.carousel__icon--prev
       slot
       button(
         type='button',
         @click.prevent='next'
         ).carousel__controls.carousel__controls--next
-        .carousel__controls-wrap
+        i.carousel__controls-wrap
           +icon('arrow', 12, 20).carousel__icon.carousel__icon--next

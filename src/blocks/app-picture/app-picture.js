@@ -3,7 +3,7 @@ Vue.component('app-picture', {
   props: ['img'],
   data() {
     return {
-      path: 'assets/images/'
+      path: '/assets/images/'
     };
   }
 });

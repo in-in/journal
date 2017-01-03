@@ -7,9 +7,12 @@ block append templates
           + path + img + 'xl@3.jpg 3x'`,
         media='(min-width: 1300px)'
       )
-      img(
+      source(
         :srcset=`path + img + '.jpg, '
           + path + img + '@2.jpg 2x, '
-          + path + img + '@3.jpg 3x'`
+          + path + img + '@3.jpg 3x'`,
+      )
+      img(
+        :src=`path + img + '.jpg'`
         alt=''
       ).app-picture__img
