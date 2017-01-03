@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
   box-sizing: border-box;
   width: 100%;
@@ -46,9 +46,12 @@
 /* carousel__controls */
 
 .carousel__controls {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
   display: block;
   padding: 0;
-  width: 4.5rem;
+  min-width: 4.5rem;
   height: 4.5rem;
   border: none;
   background-color: var(--whiteColor);
@@ -63,9 +66,10 @@
 }
 
 .carousel__controls--prev {
+  left: 0;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   animation-name: controlsLeftMoveIn;
   animation-duration: .3s;
   animation-fill-mode: backwards;
@@ -74,15 +78,17 @@
 .carousel__controls--prev:hover,
 .carousel__controls--prev:focus,
 .carousel__controls--prev:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, .4);
   animation-name: controlsLeftMoveOut;
   animation-duration: .3s;
   animation-fill-mode: forwards;
 }
 
 .carousel__controls--next {
+  right: 0;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  transform: translateX(50%);
+  transform: translate(50%, -50%);
   animation-name: controlsRightMoveIn;
   animation-duration: .3s;
   animation-fill-mode: backwards;
@@ -91,6 +97,7 @@
 .carousel__controls--next:hover,
 .carousel__controls--next:focus,
 .carousel__controls--next:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, .4);
   animation-name: controlsRightMoveOut;
   animation-duration: .3s;
   animation-fill-mode: forwards;
@@ -105,41 +112,41 @@
 
 @keyframes controlsLeftMoveOut {
   0% {
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 
   100% {
-    transform: translateX(-40%) scale(1.1);
+    transform: translate(-40%, -50%) scale(1.1);
   }
 }
 
 @keyframes controlsLeftMoveIn {
   0% {
-    transform: translateX(-40%) scale(1.1);
+    transform: translate(-40%, -50%) scale(1.1);
   }
 
   100% {
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
 @keyframes controlsRightMoveOut {
   0% {
-    transform: translateX(50%) scale(1);
+    transform: translate(50%, -50%) scale(1);
   }
 
   100% {
-    transform: translateX(40%) scale(1.1);
+    transform: translate(40%, -50%) scale(1.1);
   }
 }
 
 @keyframes controlsRightMoveIn {
   0% {
-    transform: translateX(40%) scale(1.1);
+    transform: translate(40%, -50%) scale(1.1);
   }
 
   100% {
-    transform: translateX(50%) scale(1);
+    transform: translate(50%, -50%) scale(1);
   }
 }
 

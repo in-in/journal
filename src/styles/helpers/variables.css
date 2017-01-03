@@ -4,7 +4,6 @@
   --mainColorRight: #116987;
   --accentColor: #2d8cd3;
   --cardDesc: #787878;
-  --foo: 1300px;
   --headerGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)) 35%, color(var(--mainColorRight) a(78%)) 65%, color(var(--mainColorRight) a(78%)) 0);
   --carouselGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)), color(var(--mainColorRight) a(72%)));
 }
