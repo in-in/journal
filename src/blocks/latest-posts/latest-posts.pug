@@ -1,0 +1,8 @@
+include ../container/container
+include ../section-title/section-title
+
+
+mixin latest-posts()
+  section.latest-posts&attributes(attributes)
+    +container()
+      section-title

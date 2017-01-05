@@ -2,6 +2,7 @@ include ../carousel/carousel
 include ../carousel-item/carousel-item
 include ../card/card
 include ../app-picture/app-picture
+include ../latest-posts/latest-posts
 
 mixin main()
   main.main&attributes(attributes)
@@ -13,3 +14,4 @@ mixin main()
           template(slot='card-tag') {{slide.category}}
           template(slot='card-title') {{slide.title}}
           template(slot='card-desc') {{slide.desc}}
+    +latest-posts()

@@ -208,6 +208,8 @@
         "tab-size",
         "hyphens",
         "letter-spacing",
+        "-moz-osx-font-smoothing",
+        "-webkit-font-smoothing",
         "font",
         "font-weight",
         "font-style",
