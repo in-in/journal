@@ -17,6 +17,7 @@
 
 .section-title__bg {
   min-width: 16em;
+  width: 16em;
   fill: none;
   stroke: var(--borderColor);
   stroke-width: 1px;
