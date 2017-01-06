@@ -8,7 +8,7 @@ mixin main()
   main.main&attributes(attributes)
     carousel(v-if='windowWidth > 800')
       carousel-item(v-for='(slide, index) in carouselContent') 
-        card 
+        card(:class='"card--" + slide.position')
           template(slot='card-image')
             app-picture(:img='slide.img + (index + 1)')
           template(slot='card-tag') {{slide.category}}

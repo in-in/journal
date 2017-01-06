@@ -5,4 +5,13 @@ include ../section-title/section-title
 mixin latest-posts()
   section.latest-posts&attributes(attributes)
     +container()
-      section-title
+      .latest-posts__header
+        section-title
+      .latest-posts__body
+        template(v-for='(post, index) in latestPosts') 
+          card(:class='"card--" + post.position')
+            template(slot='card-image')
+              app-picture(:img='post.img + (index + 1)')
+            template(slot='card-tag') {{post.category}}
+            template(slot='card-title') {{post.title}}
+            template(slot='card-desc') {{post.desc}}

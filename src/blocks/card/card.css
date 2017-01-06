@@ -4,28 +4,20 @@
   max-height: 16.563em;
   width: 44.375em;
   border-radius: .625em;
-  box-shadow: 0 0 3.125em .313em rgba(0, 0, 0, .35);
 }
 
 .card__image {
   overflow: hidden;
   max-width: 18.75em;
   width: 100%;
-  border-top-left-radius: .625em;
-  border-bottom-left-radius: .625em;
 }
 
 .card__body {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 2.688em;
-  padding-right: 1.563em;
-  padding-bottom: 1.563em;
-  padding-left: 1.563em;
+  box-sizing: border-box;
   width: 100%;
-  border-top-right-radius: .625em;
-  border-bottom-right-radius: .625em;
   background-color: var(--whiteColor);
   text-align: center;
 }

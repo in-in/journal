@@ -1,0 +1,23 @@
+.card--vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+  max-height: none;
+  width: 272px;
+  height: 100%;
+  box-shadow: 0 0 2.91px .09px rgba(0, 0, 0, .32);
+}
+
+.card--vertical .card__image {
+  border-top-left-radius: .625em;
+  border-top-right-radius: .625em;
+}
+
+.card--vertical .card__body {
+  padding-top: 3.125em;
+  padding-right: .938em;
+  padding-left: .938em;
+  border-bottom-right-radius: .625em;
+  border-bottom-left-radius: .625em;
+}
