@@ -1,3 +1,4 @@
 Vue.component('card', {
-  template: '#card'
+  template: '#card',
+  props: ['buttons']
 });

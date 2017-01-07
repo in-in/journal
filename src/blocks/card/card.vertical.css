@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow: hidden;
   margin-bottom: 1em;
   max-height: none;
   width: 272px;
@@ -16,8 +17,27 @@
 
 .card--vertical .card__body {
   padding-top: 3.125em;
-  padding-right: .938em;
-  padding-left: .938em;
   border-bottom-right-radius: .625em;
   border-bottom-left-radius: .625em;
+}
+
+.card--vertical .card__title {
+  padding-right: .75em;
+  padding-left: .75em;
+}
+
+.card--vertical .card__desc {
+  padding-right: 1.071em;
+  padding-left: 1.071em;
+}
+
+.card--vertical .card__button-group {
+  width: 100%;
+  background-color: pink;
+}
+
+.card--vertical .card__like {
+  width: 100%;
+  border: none;
+  background-color: lime;
 }

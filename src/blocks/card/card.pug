@@ -15,7 +15,10 @@ block append templates
         p.card__desc
           slot(name='card-desc')
         .card__button-group
-          button(type='button').card__button 
+          template(v-if='buttons')
+            button(type='button').card__like click me1
+            button(type='button').card__like click me2
+          button(type='button').card__button
             i.card__button-wrap
               | Read More
               +icon('arrow2', 14, 10).card__icon
