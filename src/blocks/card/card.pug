@@ -16,9 +16,15 @@ block append templates
           slot(name='card-desc')
         .card__button-group
           template(v-if='buttons')
-            button(type='button').card__like click me1
-            button(type='button').card__like click me2
-          button(type='button').card__button
+            button(type='button').card__button.card__button-like
+              i.card__button-wrap
+                | click
+                +icon('thumb', 73, 66).card__icon
+            button(type='button').card__button.card__button-comment
+              i.card__button-wrap
+                | click
+                +icon('bubble', 82, 72).card__icon
+          button(type='button').card__button.card__button-read-more
             i.card__button-wrap
               | Read More
               +icon('arrow2', 14, 10).card__icon
