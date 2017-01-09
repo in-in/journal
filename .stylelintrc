@@ -95,6 +95,7 @@
         "overflow-x",
         "overflow-y",
         "clip",
+        "clip-path",
         "box-sizing",
         "margin",
         "margin-top",
