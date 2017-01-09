@@ -47,5 +47,5 @@
 
 .card--vertical .card__icon {
   width: 20px;
-  fill: var(--cardIcon);
+  fill: var(--veryLightGrey);
 }
