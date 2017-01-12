@@ -1,4 +1,4 @@
-//- include ../icon/icon
+//- include ../app-icon/app-icon
 
 block append templates
   template#card
@@ -38,4 +38,5 @@ block append templates
           //-     +icon('arrow2', 14, 10).card__icon
           app-button(slot='card-buttons', :hide=false).card__button.card__button-read-more
             | Read More
+            //- +icon('arrow2', 14, 10).card__icon
             app-icon(slot='app-button-icon', name='arrow2', :w=14, :h=10).card__icon
