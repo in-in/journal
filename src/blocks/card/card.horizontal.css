@@ -29,6 +29,5 @@
 .card--horizontal .card__icon {
   margin-left: .583em;
   width: 1.167em;
-  outline: 1px solid red;
   fill: var(--accentColor);
 }

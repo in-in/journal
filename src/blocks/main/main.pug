@@ -1,4 +1,4 @@
-include ../app-icon/app-icon
+include ../icon/icon
 include ../carousel/carousel
 include ../carousel-item/carousel-item
 include ../card/card
@@ -16,8 +16,4 @@ mixin main()
           template(slot='card-tag') {{slide.category}}
           template(slot='card-title') {{slide.title}}
           template(slot='card-desc') {{slide.desc}}
-          //- app-button(slot='card-buttons', :hide=false) foo
-          //-   app-icon(slot='app-button-icon', name='thumb', :w=6, :h=2)
-          //- app-button(slot='card-buttons', :hide=false) bar
-          //-   app-icon(slot='app-button-icon', name='thumb', :w=6, :h=2)
     +latest-posts()

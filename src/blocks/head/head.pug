@@ -1,3 +1,5 @@
+include ../scripts/scripts
+
 head
   meta(charset='utf-8')
   meta(http-equiv='x-ua-compatible', content='ie=edge')
@@ -15,4 +17,5 @@ head
   block head
   title= pageTitle || ''
 
+  +scripts(['vue.js'])
   link(href='assets/styles/style.css' rel='stylesheet')

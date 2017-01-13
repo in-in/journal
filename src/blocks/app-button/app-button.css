@@ -1,3 +1,16 @@
 .app-button {
-  border: 1px solid #000;
+  border: none;
+  background: none;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+.app-button__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-button__text {
+  font-style: normal;
 }

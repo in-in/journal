@@ -83,18 +83,7 @@
 }
 
 .card__button {
-  border: none;
-  background: none;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  cursor: pointer;
-}
-
-.card__button-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-style: normal;
 }
 
 .card__icon {

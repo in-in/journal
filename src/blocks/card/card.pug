@@ -1,5 +1,3 @@
-//- include ../app-icon/app-icon
-
 block append templates
   template#card
     article.card
@@ -7,7 +5,7 @@ block append templates
         slot(name='card-image')
       .card__body
         .card__tag
-          //- +icon('tag', 256, 44).card__tag-bg
+          +icon('tag', 256, 44).card__tag-bg
           span
             slot(name='card-tag')
         h4.card__title
@@ -15,28 +13,16 @@ block append templates
         p.card__desc
           slot(name='card-desc')
         .card__button-group
-          //- slot(name='card-buttons')
           template(v-if='buttons')
-            app-button(slot='card-buttons', :hide=false).card__button.card__button-like
+            app-button(slot='card-buttons', :hide='true').card__button.card__button-like
               | Like
-              app-icon(slot='app-button-icon', name='thumb', :w=73, :h=66).card__icon
-            app-button(slot='card-buttons', :hide=false).card__button.card__button-comment
+              template(slot='app-button-icon')
+                +icon('thumb', 73, 66).card__icon
+            app-button(slot='card-buttons', :hide='true').card__button.card__button-comment
               | Comments
-              app-icon(slot='app-button-icon', name='bubble', :w=82, :h=72).card__icon
-          //- template(v-if='buttons')
-          //-   button(type='button').card__button.card__button-like
-          //-     i.card__button-wrap
-          //-       span.hide Like
-          //-       +icon('thumb', 73, 66).card__icon
-          //-   button(type='button').card__button.card__button-comment
-          //-     i.card__button-wrap
-          //-       span.hide Comments
-          //-       +icon('bubble', 82, 72).card__icon
-          //- button(type='button').card__button.card__button-read-more
-          //-   i.card__button-wrap
-          //-     span.hide Read More
-          //-     +icon('arrow2', 14, 10).card__icon
-          app-button(slot='card-buttons', :hide=false).card__button.card__button-read-more
+              template(slot='app-button-icon')
+                +icon('bubble', 82, 72).card__icon
+          app-button(slot='card-buttons', :hide='buttons').card__button.card__button-read-more
             | Read More
-            //- +icon('arrow2', 14, 10).card__icon
-            app-icon(slot='app-button-icon', name='arrow2', :w=14, :h=10).card__icon
+            template(slot='app-button-icon')
+              +icon('arrow2', 14, 10).card__icon
