@@ -16,6 +16,11 @@
   border-bottom-right-radius: .625em;
 }
 
+.card--horizontal .card__title {
+  max-height: 1.35em; /* 27/20 */
+  font-size: 1.25em;
+}
+
 .card--horizontal .card__button-read-more {
   padding-right: 1.667em;
   padding-left: 1.667em;

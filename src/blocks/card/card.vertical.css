@@ -25,6 +25,9 @@
 .card--vertical .card__title {
   padding-right: .75em;
   padding-left: .75em;
+  max-height: 3.5em;
+  font-size: 1em;
+  line-height: 1.8;
 }
 
 .card--vertical .card__desc {

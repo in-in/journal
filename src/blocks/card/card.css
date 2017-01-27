@@ -61,10 +61,7 @@
   overflow: hidden;
   margin: 0;
   margin-bottom: .75em;
-  max-height: 3.6em;
   font-weight: 600;
-  font-size: 1.25em;
-  line-height: 1.8;
 }
 
 .card__desc {
