@@ -17,8 +17,15 @@
 }
 
 .card--horizontal .card__title {
-  max-height: 1.35em; /* 27/20 */
+  padding-right: 1em;
+  padding-left: 1em;
+  max-height: 1.35em;
   font-size: 1.25em;
+}
+
+.card--horizontal .card__desc {
+  max-height: 6.6em;
+  line-height: 2.2;
 }
 
 .card--horizontal .card__button-read-more {

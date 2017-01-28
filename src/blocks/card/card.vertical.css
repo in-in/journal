@@ -23,16 +23,19 @@
 }
 
 .card--vertical .card__title {
-  padding-right: .75em;
-  padding-left: .75em;
+  padding-right: 2.188em;
+  padding-left: 2.188em;
   max-height: 3.5em;
   font-size: 1em;
   line-height: 1.8;
 }
 
 .card--vertical .card__desc {
+  margin-bottom: 1.429em; /* 20/14 */
   padding-right: 1.071em;
   padding-left: 1.071em;
+  max-height: 8em;
+  line-height: 2;
 }
 
 .card--vertical .card__button-group {
