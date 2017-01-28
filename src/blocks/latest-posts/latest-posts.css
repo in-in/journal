@@ -5,7 +5,9 @@
 
 .latest-posts__body {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-top: 3em;
+  height: 900px;
+  background-color: seagreen;
 }

@@ -24,7 +24,7 @@
 }
 
 .card--horizontal .card__desc {
-  max-height: 6.6em;
+  height: 6.6em;
   line-height: 2.2;
 }
 

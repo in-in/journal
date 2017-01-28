@@ -9,7 +9,7 @@ mixin latest-posts()
         section-title
       .latest-posts__body
         template(v-for='(post, index) in latestPosts') 
-          card(:class='"card--" + post.position', :buttons='true')
+          card(:class='[ "card--" + post.position, {"card--short": index%2} ]', :buttons='true')
             template(slot='card-image')
               app-picture(:img='post.img + (index + 1)')
             template(slot='card-tag') {{post.category}}

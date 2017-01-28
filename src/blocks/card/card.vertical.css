@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   overflow: hidden;
-  margin-bottom: 1em;
+  margin-bottom: 1.75em; /* 28/16 */
   max-height: none;
   width: 20.7852vw;
   height: 100%;
@@ -31,10 +31,10 @@
 }
 
 .card--vertical .card__desc {
-  margin-bottom: 1.429em; /* 20/14 */
+  margin-bottom: 1.429em;
   padding-right: 1.071em;
   padding-left: 1.071em;
-  max-height: 8em;
+  height: 8em;
   line-height: 2;
 }
 
@@ -56,4 +56,19 @@
 .card--vertical .card__icon {
   width: 1.25em;
   fill: var(--veryLightGrey);
+}
+
+/* card--short */
+
+.card--short .card__image {
+  min-height: 0;
+  height: 14.238vw;
+}
+
+.card--short .card__body {
+  background-color: tan;
+}
+
+.card--short .card__desc {
+  height: 6em;
 }
