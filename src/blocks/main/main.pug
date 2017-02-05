@@ -4,6 +4,7 @@ include ../carousel-item/carousel-item
 include ../card/card
 include ../app-picture/app-picture
 include ../app-button/app-button
+include ../section/section
 include ../latest-posts/latest-posts
 
 mixin main()
@@ -17,3 +18,9 @@ mixin main()
           template(slot='card-title') {{slide.title}}
           template(slot='card-desc') {{slide.desc}}
     +latest-posts()
+    +section().section--categories
+      span categories
+    +section().section--posts-lists
+      span posts list
+    +section().section--subscription
+      span subscribe

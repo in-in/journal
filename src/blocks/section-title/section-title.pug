@@ -1,5 +1,12 @@
-block append templates
-  template#section-title
-    .section-title
-      +icon('tag', 256, 44).section-title__bg
-        h2.section-title__text Latest posts
+//- block append templates
+//-   template#section-title
+//-     .section-title
+//-       +icon('tag', 256, 44).section-title__bg
+//-         h2.section-title__text {{ title }}
+
+include ../icon/icon
+
+mixin section-title(title)
+  .section-title&attributes(attributes)
+    +icon('tag', 256, 44).section-title__bg
+      h2.section-title__text= title

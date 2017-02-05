@@ -1,0 +1,11 @@
+include ../container/container
+include ../section-title/section-title
+
+mixin section()
+  section.section&attributes(attributes)
+    +container()
+      .section__wrap
+        header.section__header
+          +section-title('bar')
+        .section__body
+          block

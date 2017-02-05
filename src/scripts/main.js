@@ -94,7 +94,8 @@ const page = new Vue({
     windowWidth: 0,
     menuShow: false,
     carouselContent,
-    latestPosts
+    latestPosts,
+    itemsInRow: 4
   },
   mounted() {
     this.$nextTick(function () {
@@ -105,6 +106,20 @@ const page = new Vue({
   methods: {
     getWindowWidth() {
       this.windowWidth = document.documentElement.clientWidth;
+    },
+    reorderItem(i, length) {
+      if (i === 0 || i === (length - 1)) {
+        return i;
+      }else if (i < this.itemsInRow) {
+        return i + i;
+      }
+      return (i - ((length - 1) - i));
+    },
+    reorderClass(i) {
+      if (i < this.itemsInRow) {
+        return i % 2;
+      }
+      return !(i % 2);
     }
   }
 });

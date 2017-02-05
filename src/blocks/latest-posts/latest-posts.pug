@@ -6,12 +6,16 @@ mixin latest-posts()
   section.latest-posts&attributes(attributes)
     +container()
       .latest-posts__header
-        section-title
+        +section-title('Latest posts')
       .latest-posts__body
-        template(v-for='(post, index) in latestPosts') 
-          card(:class='[ "card--" + post.position, {"card--short": index%2} ]', :buttons='true')
+        template(v-for='(post, i) in latestPosts') 
+          card(
+            :class='[ "card--" + post.position, { "card--short": reorderClass(i) } ]', 
+            :buttons='true',
+            :style='{ order: reorderItem(i, latestPosts.length) }'
+            )
             template(slot='card-image')
-              app-picture(:img='post.img + (index + 1)')
+              app-picture(:img='post.img + (i + 1)')
             template(slot='card-tag') {{post.category}}
             template(slot='card-title') {{post.title}}
             template(slot='card-desc') {{post.desc}}

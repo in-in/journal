@@ -6,7 +6,6 @@
   margin-bottom: 1.75em; /* 28/16 */
   max-height: none;
   width: 20.7852vw;
-  height: 100%;
   box-shadow: 0 0 .182em .006em rgba(0, 0, 0, .32);
 }
 
@@ -63,10 +62,6 @@
 .card--short .card__image {
   min-height: 0;
   height: 14.238vw;
-}
-
-.card--short .card__body {
-  background-color: tan;
 }
 
 .card--short .card__desc {
