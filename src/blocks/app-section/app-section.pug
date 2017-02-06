@@ -1,0 +1,12 @@
+include ../container/container
+include ../app-section-title/app-section-title
+
+block append templates
+  template#app-section
+    section.section
+      +container()
+        template(v-if='title')
+          header.section__header
+            slot(name='header')
+        .section__body
+          slot(name='body')

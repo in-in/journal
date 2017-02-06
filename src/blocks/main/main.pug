@@ -4,8 +4,7 @@ include ../carousel-item/carousel-item
 include ../card/card
 include ../app-picture/app-picture
 include ../app-button/app-button
-include ../section/section
-include ../latest-posts/latest-posts
+include ../app-section/app-section
 
 mixin main()
   main.main&attributes(attributes)
@@ -17,10 +16,34 @@ mixin main()
           template(slot='card-tag') {{slide.category}}
           template(slot='card-title') {{slide.title}}
           template(slot='card-desc') {{slide.desc}}
-    +latest-posts()
-    +section().section--categories
-      span categories
-    +section().section--posts-lists
-      span posts list
-    +section().section--subscription
-      span subscribe
+    app-section(:title='true').section--latest-posts
+      template(slot='header')
+        app-section-title(:title='"latest posts"')
+      template(slot='body')
+        template(v-for='(post, i) in latestPosts') 
+          card(
+            :class='[ "card--" + post.position, { "card--short": reorderClass(i) } ]', 
+            :buttons='true',
+            :style='{ order: reorderItem(i, latestPosts.length) }'
+            )
+            template(slot='card-image')
+              app-picture(:img='post.img + (i + 1)')
+            template(slot='card-tag') {{post.category}}
+            template(slot='card-title') {{post.title}}
+            template(slot='card-desc') {{post.desc}}
+
+    app-section(:title='true').section--categories
+      template(slot='header')
+        app-section-title(:title='"categories"')
+      template(slot='body')
+        span categories
+    app-section.section--posts-lists
+      template(slot='body')
+        span posts list
+    app-section(:title='true').section--subscription
+      template(slot='header')
+        app-section-title(
+          :title='"subscribe and stay in touch"',
+          :nobg='true').section-title--simple
+      template(slot='body')
+        span subscribe

@@ -35,6 +35,22 @@
   transform: translate(-50%, -50%);
 }
 
+/* section-title--simple */
+
+.section-title--simple {
+  background-color: pink;
+}
+
+.section-title--simple::before,
+.section-title--simple::after {
+  display: none;
+}
+
+.section-title--simple .section-title__text {
+  position: static;
+  transform: none;
+}
+
 @media (--m) {
   .section-title {
     font-size: 1em;

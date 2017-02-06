@@ -1,0 +1,8 @@
+include ../icon/icon
+
+block append templates
+  template#app-section-title
+    .section-title
+      template(v-if='!nobg')
+        +icon('tag', 256, 44).section-title__bg
+      h2.section-title__text {{ title }}
