@@ -3,14 +3,18 @@
   flex-direction: column;
   justify-content: flex-start;
   overflow: hidden;
-  margin-bottom: 1.75em; /* 28/16 */
+  margin: .3em;
+  /* margin-bottom: 1.75em; */
+  min-width: 13.75em; /* 220/16 */
   max-height: none;
   width: 20.7852vw;
+  height: 100%;
   box-shadow: 0 0 .182em .006em rgba(0, 0, 0, .32);
 }
 
 .card--vertical .card__image {
-  min-height: 16.4742vw;
+  max-height: 16.4742vw;
+  height: 16.4742vw;
   border-top-left-radius: .625em;
   border-top-right-radius: .625em;
 }
@@ -66,4 +70,11 @@
 
 .card--short .card__desc {
   height: 6em;
+}
+
+@media (--x) {
+  .card--vertical {
+    margin: 0;
+    margin-bottom: 1.75em;
+  }
 }
