@@ -22,9 +22,9 @@ mixin main()
       template(slot='body')
         template(v-for='(post, i) in latestPosts') 
           card(
-            :class='[ "card--" + post.position, { "card--short": reorderClass(i) } ]', 
+            :class='[ "card--" + post.position, { "card--short": (windowWidth > 1050) && reorderClass(i) } ]', 
             :buttons='true',
-            :style='{ order: reorderItem(i, latestPosts.length) }'
+            :style='{ order: (windowWidth > 1050) ? reorderItem(i, latestPosts.length) : "" }'
             )
             template(slot='card-image')
               app-picture(:img='post.img + (i + 1)')

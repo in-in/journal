@@ -15,6 +15,6 @@
 
 @custom-media --m (width >= 801px);
 
-@custom-media --x (width >= 1050px);
+@custom-media --x (width > 1050px);
 
 @custom-media --xl (width >= 1300px);

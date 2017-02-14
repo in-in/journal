@@ -105,7 +105,8 @@ const page = new Vue({
   },
   methods: {
     getWindowWidth() {
-      this.windowWidth = document.documentElement.clientWidth;
+      // this.windowWidth = document.documentElement.clientWidth;
+      this.windowWidth = window.innerWidth;
     },
     reorderItem(i, length) {
       if (i === 0 || i === (length - 1)) {
