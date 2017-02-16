@@ -27,7 +27,8 @@ mixin main()
             :style='{ order: (windowWidth > 1050) ? reorderItem(i, latestPosts.length) : "" }'
             )
             template(slot='card-image')
-              app-picture(:img='post.img + (i + 1)')
+              //- app-picture(:img='post.img + (i + 1)')
+              app-picture(:img='post.img')
             template(slot='card-tag') {{post.category}}
             template(slot='card-title') {{post.title}}
             template(slot='card-desc') {{post.desc}}
