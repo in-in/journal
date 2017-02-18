@@ -27,6 +27,6 @@ block append templates
           :media=`'(min-width: ' + w + 'px)'`
         )
       img(
-        :src=`path + img.name + '.jpg'`
+        :src=`path + img.name + '_' + img.widht[img.widht.length - 1] + '.jpg'`,
         alt=''
       ).app-picture__img

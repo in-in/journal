@@ -1,14 +1,11 @@
 .card {
   display: flex;
   justify-content: center;
-  max-height: 16.563em;
-  width: 44.375em;
   border-radius: .625em;
 }
 
 .card__image {
   overflow: hidden;
-  max-width: 18.75em;
   width: 100%;
 }
 
@@ -83,11 +80,4 @@
 
 .card__icon {
   display: block;
-}
-
-@media (--xl) {
-  .card {
-    width: 54.6154vw;
-    height: 20.377vw;
-  }
 }

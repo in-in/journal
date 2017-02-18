@@ -1,8 +1,11 @@
 .card--horizontal {
+  max-height: 16.563em;
+  width: 44.375em;
   box-shadow: 0 0 3.125em .313em rgba(0, 0, 0, .35);
 }
 
 .card--horizontal .card__image {
+  max-width: 18.75em;
   border-top-left-radius: .625em;
   border-bottom-left-radius: .625em;
 }

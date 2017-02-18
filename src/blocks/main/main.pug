@@ -12,7 +12,7 @@ mixin main()
       carousel-item(v-for='(slide, index) in carouselContent') 
         card(:class='"card--" + slide.position')
           template(slot='card-image')
-            app-picture(:img='slide.img + (index + 1)')
+            //- app-picture(:img='slide.img + (index + 1)')
           template(slot='card-tag') {{slide.category}}
           template(slot='card-title') {{slide.title}}
           template(slot='card-desc') {{slide.desc}}
