@@ -34,12 +34,7 @@ const latestPosts = [
     position: 'vertical',
     img: {
       name: 'post1',
-      widht: [
-        230,
-        465,
-        683,
-        780
-      ]
+      widht: [ 780, 683, 465, 230]
     },
     category: 'technology',
     title: 'It was a simple matter to throw off the covers',
@@ -49,16 +44,7 @@ const latestPosts = [
     position: 'vertical',
     img: {
       name: 'post2',
-      widht: [
-        230,
-        351,
-        447,
-        535,
-        611,
-        673,
-        740,
-        780
-      ]
+      widht: [ 780, 740, 673, 611, 535, 447, 351, 230 ]
     },
     category: 'business',
     title: 'The first thing he wanted to do was get the lower part',
@@ -68,14 +54,7 @@ const latestPosts = [
     position: 'vertical',
     img: {
       name: 'post3',
-      widht: [
-        230,
-        395,
-        525,
-        639,
-        743,
-        780
-      ]
+      widht: [ 780, 743, 639, 525, 395, 230 ]
     },
     category: 'travel',
     title: 'At the same time, though, he did not forget to remind himself that calm',
@@ -85,12 +64,7 @@ const latestPosts = [
     position: 'vertical',
     img: {
       name: 'post4',
-      widht: [
-        230,
-        481,
-        709,
-        780
-      ]
+      widht: [ 780, 709, 481, 230 ]
     },
     category: 'entertainment',
     title: 'It took just as much effort to get back to where he had been earlier',
@@ -100,12 +74,7 @@ const latestPosts = [
     position: 'vertical',
     img: {
       name: 'post5',
-      widht: [
-        230,
-        467,
-        678,
-        780
-      ]
+      widht: [ 780, 678, 467, 230 ]
     },
     category: 'travel',
     title: 'And he lay there quietly a while longer',
@@ -115,12 +84,7 @@ const latestPosts = [
     position: 'vertical',
     img: {
       name: 'post6',
-      widht: [
-        230,
-        467,
-        678,
-        780
-      ]
+      widht: [ 780, 707, 478, 230 ]
     },
     category: 'technology',
     title: 'When Gregor was already sticking half way out of the bed',
@@ -130,12 +94,7 @@ const latestPosts = [
     position: 'vertical',
     img: {
       name: 'post7',
-      widht: [
-        230,
-        519,
-        721,
-        780
-      ]
+      widht: [ 780, 721, 519, 230 ]
     },
     category: 'business',
     title: 'After a while he had already moved so far across',
@@ -145,13 +104,7 @@ const latestPosts = [
     position: 'vertical',
     img: {
       name: 'post8',
-      widht: [
-        230,
-        450,
-        618,
-        758,
-        780
-      ]
+      widht: [ 780, 758, 618, 450, 230 ]
     },
     category: 'entertainment',
     title: 'For a moment everything remained quiet',
@@ -176,7 +129,6 @@ const page = new Vue({
   },
   methods: {
     getWindowWidth() {
-      // this.windowWidth = document.documentElement.clientWidth;
       this.windowWidth = window.innerWidth;
     },
     reorderItem(i, length) {
@@ -195,51 +147,3 @@ const page = new Vue({
     }
   }
 });
-
-
-// post1_230
-// post1_465
-// post1_683
-// post1_780
-
-// post2_230
-// post2_351
-// post2_447
-// post2_535
-// post2_611
-// post2_673
-// post2_740
-// post2_780
-
-// post3_230
-// post3_395
-// post3_525
-// post3_639
-// post3_743
-// post3_780
-
-// post4_230
-// post4_481
-// post4_709
-// post4_780
-
-// post5_230
-// post5_467
-// post5_678
-// post5_780
-
-// post6_230
-// post6_478
-// post6_707
-// post6_780
-
-// post7_230
-// post7_519
-// post7_721
-// post7_780
-
-// post8_230
-// post8_450
-// post8_618
-// post8_758
-// post8_780

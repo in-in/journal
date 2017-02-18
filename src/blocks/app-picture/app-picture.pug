@@ -23,15 +23,10 @@ block append templates
     picture.app-picture
       template(v-for='w in img.widht')
         source(
-          :media=`('min-width: ' + w + 'px')`,
-          :srcset=`path + img.name + '_' + w + '.jpg'`
+          :srcset=`path + img.name + '_' + w + '.jpg'`,
+          :media=`'(min-width: ' + w + 'px)'`
         )
-      //- source(
-      //-   :srcset=`path + img + '.jpg, '
-      //-     + path + img + '@2.jpg 2x, '
-      //-     + path + img + '@3.jpg 3x'`,
-      //- )
       img(
-        :src=`path + img + '.jpg'`
+        :src=`path + img.name + '.jpg'`
         alt=''
       ).app-picture__img
