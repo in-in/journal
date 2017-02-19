@@ -1,28 +1,40 @@
 const carouselContent = [
   {
     position: 'horizontal',
-    img: 'slide',
+    img: {
+      name: 'slide1',
+      widht: [ 872, 820, 719, 603, 467, 300 ]
+    },
     category: 'travel',
     title: 'One morning, when Gregor',
     desc: 'He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.'
   },
   {
     position: 'horizontal',
-    img: 'slide',
+    img: {
+      name: 'slide2',
+      widht: [ 872, 829, 754, 682, 604, 517, 418, 300 ]
+    },
     category: 'technology',
     title: 'The bedding was hardly',
     desc: 'His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.'
   },
   {
     position: 'horizontal',
-    img: 'slide',
+    img: {
+      name: 'slide3',
+      widht: [ 872, 839, 702, 525, 300 ]
+    },
     category: 'business',
     title: 'What\'s happened to me?',
     desc: 'His room, a proper human room although a little too small, lay peacefully between its four familiar walls.'
   },
   {
     position: 'horizontal',
-    img: 'slide',
+    img: {
+      name: 'slide4',
+      widht: [ 872, 824, 724, 605, 466, 300 ]
+    },
     category: 'entertainment',
     title: 'A collection of textile',
     desc: 'It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.'
@@ -34,7 +46,7 @@ const latestPosts = [
     position: 'vertical',
     img: {
       name: 'post1',
-      widht: [ 780, 683, 465, 230]
+      widht: [ 780, 683, 465, 230 ]
     },
     category: 'technology',
     title: 'It was a simple matter to throw off the covers',

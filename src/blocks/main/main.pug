@@ -9,10 +9,10 @@ include ../app-section/app-section
 mixin main()
   main.main&attributes(attributes)
     carousel(v-if='windowWidth > 800')
-      carousel-item(v-for='(slide, index) in carouselContent') 
+      carousel-item(v-for='slide in carouselContent') 
         card(:class='"card--" + slide.position')
           template(slot='card-image')
-            //- app-picture(:img='slide.img + (index + 1)')
+            app-picture(:img='slide.img')
           template(slot='card-tag') {{slide.category}}
           template(slot='card-title') {{slide.title}}
           template(slot='card-desc') {{slide.desc}}
@@ -27,7 +27,6 @@ mixin main()
             :style='{ order: (windowWidth > 1050) ? reorderItem(i, latestPosts.length) : "" }'
             )
             template(slot='card-image')
-              //- app-picture(:img='post.img + (i + 1)')
               app-picture(:img='post.img')
             template(slot='card-tag') {{post.category}}
             template(slot='card-title') {{post.title}}

@@ -27,6 +27,7 @@
 }
 
 .card--horizontal .card__desc {
+  margin-bottom: 1.643em; /* 23/14 */
   height: 6.6em;
   line-height: 2.2;
 }
