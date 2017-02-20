@@ -10,6 +10,12 @@
   border-bottom-left-radius: .625em;
 }
 
+.card--horizontal .app-picture,
+.card--horizontal .app-picture__img {
+  display: inline-block;
+  height: 100%;
+}
+
 .card--horizontal .card__body {
   padding-top: 2.688em;
   padding-right: 1.563em;

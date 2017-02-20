@@ -64,9 +64,6 @@
 /* card--short */
 
 .card--short .card__image {
-  /* min-height: 0;
-  height: 14.238vw; */
-  /* 184/16 */
   min-height: 11.5em;
   height: 14.1647vw;
 }
