@@ -2,7 +2,7 @@ Vue.component('menu-toggle', {
   template: '#menu-toggle',
   props: ['buttonText'],
   methods: {
-    menuShow: function () {
+    menuShow() {
       this.$root.menuShow = !this.$root.menuShow;
     }
   }

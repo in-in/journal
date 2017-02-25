@@ -1,6 +1,6 @@
 Vue.component('main-menu', {
   template: '#main-menu',
-  data: function () {
+  data() {
     return {
       items: [
         ['Home'],

@@ -124,7 +124,7 @@ const latestPosts = [
   }
 ];
 
-const page = new Vue({
+new Vue({
   el: '.page',
   data: {
     windowWidth: 0,
