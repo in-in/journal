@@ -7,7 +7,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 44vw;
-  background-image: var(--carouselGradient), url(../images/bg-carousel.jpg);
+  background-image: var(--carouselGradient), url(../images/bg-carousel_1300.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,31 +15,31 @@
 
 @media (min-resolution: 2dppx) {
   .carousel {
-    background-image: var(--carouselGradient), url(../images/bg-carousel@2.jpg);
+    background-image: var(--carouselGradient), url(../images/bg-carousel_2600@2x.jpg);
   }
 }
 
 @media (min-resolution: 3dppx) {
   .carousel {
-    background-image: var(--carouselGradient), url(../images/bg-carousel@3.jpg);
+    background-image: var(--carouselGradient), url(../images/bg-carousel_3900@3x.jpg);
   }
 }
 
 @media (--xl) {
   .carousel {
-    background-image: var(--carouselGradient), url(../images/bg-carousel-xl.jpg);
+    background-image: var(--carouselGradient), url(../images/bg-carousel_1920.jpg);
   }
 }
 
 @media (--xl) and (min-resolution: 2dppx) {
   .carousel {
-    background-image: var(--carouselGradient), url(../images/bg-carousel-xl@2.jpg);
+    background-image: var(--carouselGradient), url(../images/bg-carousel_3840@2x.jpg);
   }
 }
 
 @media (--xl) and (min-resolution: 3dppx) {
   .carousel {
-    background-image: var(--carouselGradient), url(../images/bg-carousel-xl@3.jpg);
+    background-image: var(--carouselGradient), url(../images/bg-carousel_5760@3x.jpg);
   }
 }
 
