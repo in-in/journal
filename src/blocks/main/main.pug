@@ -9,7 +9,7 @@ include ../app-section/app-section
 mixin main()
   main.main&attributes(attributes)
     carousel(v-if='windowWidth > 800')
-      carousel-item(v-for='slide in carouselContent') 
+      carousel-item(v-for='slide in carouselContent', :key='slide.title') 
         card(:class='"card--" + slide.position')
           template(slot='card-image')
             app-picture(:img='slide.img')
