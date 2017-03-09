@@ -26,22 +26,22 @@
 }
 
 .card--horizontal .card__title {
+  max-height: 1.35em;
   padding-right: 1em;
   padding-left: 1em;
-  max-height: 1.35em;
   font-size: 1.25em;
 }
 
 .card--horizontal .card__desc {
-  margin-bottom: 1.643em; /* 23/14 */
   height: 6.6em;
+  margin-bottom: 1.643em; /* 23/14 */
   line-height: 2.2;
 }
 
 .card--horizontal .card__button-read-more {
+  height: 3.333em;
   padding-right: 1.667em;
   padding-left: 1.667em;
-  height: 3.333em;
   border: 1px solid var(--accentColor);
   color: var(--accentColor);
   text-transform: uppercase;
@@ -49,7 +49,7 @@
 }
 
 .card--horizontal .card__icon {
-  margin-left: .583em;
   width: 1.167em;
+  margin-left: .583em;
   fill: var(--accentColor);
 }
