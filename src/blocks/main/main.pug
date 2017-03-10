@@ -10,44 +10,42 @@ mixin main()
   main.main&attributes(attributes)
     carousel(v-if='windowWidth > 800')
       carousel-item(v-for='slide in carouselContent', :key='slide.title') 
-        card(:class='"card--" + slide.position')
+        card(:class='"card--" + slide.type',
+          :buttons='true')
           template(slot='card-image')
             app-picture(:img='slide.img')
           template(slot='card-tag') {{slide.category}}
-          template(slot='card-title') {{slide.title}}
-          template(slot='card-desc') {{slide.desc}}
+          h4.card__title(slot='card-title') {{slide.title}}
+          p.card__desc(slot='card-desc') {{slide.desc}}
+    //- section--latest-posts
     app-section(:title='true').section--latest-posts
       template(slot='header')
         app-section-title(:title='"latest posts"')
       template(slot='body')
         template(v-for='(post, i) in latestPosts') 
           card(
-            :class='[ "card--" + post.position, { "card--short": (windowWidth > 1050) && reorderClass(i) } ]', 
+            :class='[ "card--" + post.type, { "card--short": (windowWidth > 1050) && reorderClass(i) } ]', 
             :buttons='true',
             :style='{ order: (windowWidth > 1050) ? reorderItem(i, latestPosts.length) : "" }'
             )
             template(slot='card-image')
               app-picture(:img='post.img')
             template(slot='card-tag') {{post.category}}
-            template(slot='card-title') {{post.title}}
-            template(slot='card-desc') {{post.desc}}
-
+            h4.card__title(slot='card-title') {{post.title}}
+            p.card__desc(slot='card-desc') {{post.desc}}
+    //- section--categories
     app-section(:title='true').section--categories
       template(slot='header')
         app-section-title(:title='"categories"')
-      template(v-for='(post, i) in latestPosts') 
-        card(
-          :class='[ "card--" + post.position, { "card--short": (windowWidth > 1050) && reorderClass(i) } ]', 
-          :buttons='true',
-          :style='{ order: (windowWidth > 1050) ? reorderItem(i, latestPosts.length) : "" }'
-          )
-          template(slot='card-image')
-            app-picture(:img='post.img')
-          template(slot='card-tag') {{post.category}}
-          template(slot='card-title') {{post.title}}
-          template(slot='card-desc') {{post.desc}}
       template(slot='body')
-        span categories
+        template(v-for='categorie in categoriesList') 
+          card(
+            :class='[ "card--" + categorie.type ]',
+            :buttons='false',
+            )
+            template(slot='card-image')
+              app-picture(:img='categorie.img')
+            template(slot='card-tag') {{categorie.category}}
     app-section.section--posts-lists
       template(slot='body')
         span posts list

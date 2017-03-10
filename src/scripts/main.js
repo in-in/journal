@@ -1,6 +1,6 @@
 const carouselContent = [
   {
-    position: 'horizontal',
+    type: 'horizontal',
     img: {
       name: 'slide1',
       widht: [ 872, 820, 719, 603, 467, 300 ]
@@ -10,7 +10,7 @@ const carouselContent = [
     desc: 'He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.'
   },
   {
-    position: 'horizontal',
+    type: 'horizontal',
     img: {
       name: 'slide2',
       widht: [ 872, 829, 754, 682, 604, 517, 418, 300 ]
@@ -20,7 +20,7 @@ const carouselContent = [
     desc: 'His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.'
   },
   {
-    position: 'horizontal',
+    type: 'horizontal',
     img: {
       name: 'slide3',
       widht: [ 872, 839, 702, 525, 300 ]
@@ -30,7 +30,7 @@ const carouselContent = [
     desc: 'His room, a proper human room although a little too small, lay peacefully between its four familiar walls.'
   },
   {
-    position: 'horizontal',
+    type: 'horizontal',
     img: {
       name: 'slide4',
       widht: [ 872, 824, 724, 605, 466, 300 ]
@@ -43,7 +43,7 @@ const carouselContent = [
 
 const latestPosts = [
   {
-    position: 'vertical',
+    type: 'vertical',
     img: {
       name: 'post1',
       widht: [ 780, 683, 465, 230 ]
@@ -53,7 +53,7 @@ const latestPosts = [
     desc: 'But it became difficult after that, especially as he was so exceptionally broad. He would have used his arms and his hands to push himself up'
   },
   {
-    position: 'vertical',
+    type: 'vertical',
     img: {
       name: 'post2',
       widht: [ 780, 740, 673, 611, 535, 447, 351, 230 ]
@@ -63,7 +63,7 @@ const latestPosts = [
     desc: 'So then he tried to get the top part of his body out of the bed first, carefully turning his head to the side. This he managed quite easily, and despite its breadth and its weight'
   },
   {
-    position: 'vertical',
+    type: 'vertical',
     img: {
       name: 'post3',
       widht: [ 780, 743, 639, 525, 395, 230 ]
@@ -73,7 +73,7 @@ const latestPosts = [
     desc: 'At times like this he would direct his eyes to the window and look out as clearly as he could, but unfortunately, even the other side of the narrow street was enveloped in morning fog and the view had little confidence or cheer to offer him.'
   },
   {
-    position: 'vertical',
+    type: 'vertical',
     img: {
       name: 'post4',
       widht: [ 780, 709, 481, 230 ]
@@ -83,7 +83,7 @@ const latestPosts = [
     desc: 'He told himself once more that it was not possible for him to stay in bed and that the most sensible thing to do would be to get free of it in whatever way he could at whatever sacrifice.'
   },
   {
-    position: 'vertical',
+    type: 'vertical',
     img: {
       name: 'post5',
       widht: [ 780, 678, 467, 230 ]
@@ -93,7 +93,7 @@ const latestPosts = [
     desc: 'But then he said to himself: "Before it strikes quarter past seven I\'ll definitely have to have got properly out of bed.'
   },
   {
-    position: 'vertical',
+    type: 'vertical',
     img: {
       name: 'post6',
       widht: [ 780, 707, 478, 230 ]
@@ -103,7 +103,7 @@ const latestPosts = [
     desc: 'Two strong people - he had his father and the maid in mind - would have been more than enough; they would only have to push their arms under the dome of his back'
   },
   {
-    position: 'vertical',
+    type: 'vertical',
     img: {
       name: 'post7',
       widht: [ 780, 721, 519, 230 ]
@@ -113,7 +113,7 @@ const latestPosts = [
     desc: 'The time was now ten past seven and he would have to make a final decision very soon. Then there was a ring at the door of the flat.'
   },
   {
-    position: 'vertical',
+    type: 'vertical',
     img: {
       name: 'post8',
       widht: [ 780, 758, 618, 450, 230 ]
@@ -124,6 +124,33 @@ const latestPosts = [
   }
 ];
 
+const categoriesList = [
+  {
+    type: 'categorie',
+    img: {
+      name: 'post4',
+      widht: [ 780, 709, 481, 230 ]
+    },
+    category: 'entertainment'
+  },
+  {
+    type: 'categorie',
+    img: {
+      name: 'slide1',
+      widht: [ 872, 820, 719, 603, 467, 300 ]
+    },
+    category: 'travel'
+  },
+  {
+    type: 'categorie',
+    img: {
+      name: 'post1',
+      widht: [ 780, 683, 465, 230 ]
+    },
+    category: 'technology'
+  }
+];
+
 new Vue({
   el: '.page',
   data: {
@@ -131,6 +158,7 @@ new Vue({
     menuShow: false,
     carouselContent,
     latestPosts,
+    categoriesList,
     itemsInRow: 4
   },
   mounted() {
