@@ -2,6 +2,6 @@ block append templates
   template#app-button
     button(type='button').app-button
       i.app-button__wrap
-        span(:class='{ "hide": hide }').app-button__text
+        span(:class='{ "hide": hideText }').app-button__text
           slot
         slot(name='app-button-icon')

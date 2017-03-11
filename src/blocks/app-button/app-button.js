@@ -1,13 +1,9 @@
 Vue.component('app-button', {
   template: '#app-button',
   props: {
-    hide: Boolean
-  },
-  computed: {
-    showButton(btn) {
-      if (buttons === 'read-more') {
-        return false;
-      }
+    hideText: {
+      type: Boolean,
+      default: true
     }
   }
 });

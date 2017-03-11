@@ -1,8 +1,9 @@
 block append templates
   template#card
     article.card
-      .card__image
-        slot(name='card-image')
+      //- .card__image
+      //-   slot(name='card-image')
+      slot(name='card-image')
       .card__body
         .card__tag
           +icon('tag', 256, 44).card__tag-bg
@@ -10,31 +11,4 @@ block append templates
             slot(name='card-tag')
         slot(name='card-title')
         slot(name='card-desc')
-        template(v-if='buttons')
-          .card__button-group
-            app-button(slot='card-buttons', :hide='buttons').card__button.card__button-like
-              | Like
-              template(slot='app-button-icon')
-                +icon('thumb', 73, 66).card__icon
-            app-button(slot='card-buttons', :hide='buttons').card__button.card__button-comment
-              | Comments
-              template(slot='app-button-icon')
-                +icon('bubble', 82, 72).card__icon
-            app-button(slot='card-buttons', :hide='buttons').card__button.card__button-read-more
-              | Read More
-              template(slot='app-button-icon')
-                +icon('arrow2', 14, 10).card__icon
-        //- .card__button-group
-        //-   template(v-if='buttons')
-        //-     app-button(slot='card-buttons', :hide='true').card__button.card__button-like
-        //-       | Like
-        //-       template(slot='app-button-icon')
-        //-         +icon('thumb', 73, 66).card__icon
-        //-     app-button(slot='card-buttons', :hide='true').card__button.card__button-comment
-        //-       | Comments
-        //-       template(slot='app-button-icon')
-        //-         +icon('bubble', 82, 72).card__icon
-        //-   app-button(slot='card-buttons', :hide='buttons').card__button.card__button-read-more
-        //-     | Read More
-        //-     template(slot='app-button-icon')
-        //-       +icon('arrow2', 14, 10).card__icon
+        slot(name='card-buttons')

@@ -10,13 +10,21 @@ mixin main()
   main.main&attributes(attributes)
     carousel(v-if='windowWidth > 800')
       carousel-item(v-for='slide in carouselContent', :key='slide.title') 
-        card(:class='"card--" + slide.type',
-          :buttons='true')
-          template(slot='card-image')
+        card(
+          :class='"card--" + slide.type',
+          :buttons='"read-more"'
+          )
+          .card__image(slot='card-image')
             app-picture(:img='slide.img')
           template(slot='card-tag') {{slide.category}}
           h4.card__title(slot='card-title') {{slide.title}}
           p.card__desc(slot='card-desc') {{slide.desc}}
+          .card__button-group(slot='card-buttons')
+            app-button(slot='card-buttons', :hide-text='false').card__button.card__button-read-more
+              | Read More
+              template(slot='app-button-icon')
+                +icon('arrow2', 14, 10).card__icon
+
     //- section--latest-posts
     app-section(:title='true').section--latest-posts
       template(slot='header')
@@ -25,14 +33,28 @@ mixin main()
         template(v-for='(post, i) in latestPosts') 
           card(
             :class='[ "card--" + post.type, { "card--short": (windowWidth > 1050) && reorderClass(i) } ]', 
-            :buttons='true',
+            :buttons='"all"',
             :style='{ order: (windowWidth > 1050) ? reorderItem(i, latestPosts.length) : "" }'
             )
-            template(slot='card-image')
+            .card__image(slot='card-image')
               app-picture(:img='post.img')
             template(slot='card-tag') {{post.category}}
             h4.card__title(slot='card-title') {{post.title}}
             p.card__desc(slot='card-desc') {{post.desc}}
+            .card__button-group(slot='card-buttons')
+              app-button(slot='card-buttons').card__button.card__button-like
+                | Like
+                template(slot='app-button-icon')
+                  +icon('thumb', 73, 66).card__icon
+              app-button(slot='card-buttons').card__button.card__button-comment
+                | Comments
+                template(slot='app-button-icon')
+                  +icon('bubble', 82, 72).card__icon
+              app-button(slot='card-buttons').card__button.card__button-read-more
+                | Read More
+                template(slot='app-button-icon')
+                  +icon('arrow2', 14, 10).card__icon
+
     //- section--categories
     app-section(:title='true').section--categories
       template(slot='header')
@@ -43,9 +65,10 @@ mixin main()
             :class='[ "card--" + categorie.type ]',
             :buttons='false',
             )
-            template(slot='card-image')
+            .card__image(slot='card-image')
               app-picture(:img='categorie.img')
             template(slot='card-tag') {{categorie.category}}
+
     app-section.section--posts-lists
       template(slot='body')
         span posts list
