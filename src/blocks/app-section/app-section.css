@@ -18,13 +18,21 @@
 
 .section--categories {
   min-height: 30.313em; /* 485/16 */
-  /* height: 37.3077vw; */
   box-sizing: border-box;
   padding-top: 3.75em; /* 60/16 */
-  background-color: dodgerblue;
+  /* background-image: url(../images/bg-categories_1920.jpg); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.section--categories .section__body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding-top: 3.375em; /* 54/16 */
 }
 
 /* section--posts-lists */
@@ -39,7 +47,20 @@
   background-color: gold;
 }
 
-@media (--x) {
+@media (--500) {
+  .section--categories .section__body {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (--800) {
+  .section--categories .section__body {
+    justify-content: space-between;
+  }
+}
+
+@media (--1050) {
   .section--latest-posts .section__body {
     flex-direction: column;
     align-content: space-between;

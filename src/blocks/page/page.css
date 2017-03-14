@@ -8,7 +8,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-@media (--xl) {
+@media (--1300) {
   .page {
     font-size: 1.2377vw;
   }

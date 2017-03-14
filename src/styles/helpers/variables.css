@@ -11,10 +11,12 @@
   --carouselGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)), color(var(--mainColorRight) a(72%)));
 }
 
-@custom-media --s (width >= 320px);
+@custom-media --320 (width >= 320px);
 
-@custom-media --m (width >= 801px);
+@custom-media --500 (width >= 500px);
 
-@custom-media --x (width > 1050px);
+@custom-media --800 (width >= 801px);
 
-@custom-media --xl (width >= 1300px);
+@custom-media --1050 (width >= 1050px);
+
+@custom-media --1300 (width >= 1300px);

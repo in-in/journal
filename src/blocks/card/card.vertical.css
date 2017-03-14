@@ -72,7 +72,7 @@
   height: 6em;
 }
 
-@media (--x) {
+@media (--1050) {
   .card--vertical {
     margin: 0;
     margin-bottom: 1.75em;

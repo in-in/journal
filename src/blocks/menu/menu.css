@@ -54,7 +54,7 @@
   }
 }
 
-@media (--m) {
+@media (--800) {
   .menu {
     height: 5.5385vw;
     margin: 0 auto;
@@ -95,7 +95,7 @@
   }
 }
 
-@media (--x) {
+@media (--1050) {
   .menu__list::before {
     display: block;
     flex-grow: 1;

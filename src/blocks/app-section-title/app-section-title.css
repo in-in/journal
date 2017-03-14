@@ -51,7 +51,7 @@
   transform: none;
 }
 
-@media (--m) {
+@media (--800) {
   .section-title {
     font-size: 1em;
   }
