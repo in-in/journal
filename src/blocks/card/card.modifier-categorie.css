@@ -51,9 +51,16 @@
 
 @media (--500) {
   .card--categorie {
-    width: 42%;
     height: auto;
     margin: 3vw;
+  }
+
+  .card--categorie:not(:last-child) {
+    width: 42%;
+  }
+
+  .card--categorie:last-child {
+    width: 92%;
   }
 
   .card--categorie::before {
@@ -64,8 +71,8 @@
 }
 
 @media (--800) {
-  .card--categorie {
-    flex: initial;
+  .card--categorie:not(:last-child),
+  .card--categorie:last-child {
     width: 28.4615vw;
     height: 18.7692vw;
     margin: 0;
