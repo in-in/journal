@@ -20,7 +20,7 @@
   min-height: 30.313em; /* 485/16 */
   box-sizing: border-box;
   padding-top: 3.75em; /* 60/16 */
-  /* background-image: url(../images/bg-categories_1920.jpg); */
+  background-image: url(../images/bg-categories_320.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -48,6 +48,10 @@
 }
 
 @media (--500) {
+  .section--categories {
+    background-image: url(../images/bg-categories_500.jpg);
+  }
+
   .section--categories .section__body {
     flex-direction: row;
     justify-content: space-around;
@@ -55,6 +59,10 @@
 }
 
 @media (--800) {
+  .section--categories {
+    background-image: url(../images/bg-categories_800.jpg);
+  }
+
   .section--categories .section__body {
     justify-content: space-between;
   }
@@ -68,5 +76,9 @@
     max-height: 66.563em;
     width: 100%;
     background-color: seagreen;
+  }
+
+  .section--categories {
+    background-image: url(../images/bg-categories_1920.jpg);
   }
 }
