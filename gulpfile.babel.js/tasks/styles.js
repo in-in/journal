@@ -9,9 +9,11 @@ import customProperties from 'postcss-custom-properties';
 import mediaMinmax from 'postcss-media-minmax';
 import customMedia from 'postcss-custom-media';
 import colorFunction from 'postcss-color-function';
+import eachLoop from 'postcss-each';
 
 const processors = [
   atImport({glob: true}),
+  eachLoop(),
   customProperties(),
   mediaMinmax(),
   customMedia(),

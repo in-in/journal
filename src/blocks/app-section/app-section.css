@@ -17,9 +17,9 @@
 /* section--categories */
 
 .section--categories {
-  min-height: 30.313em; /* 485/16 */
   box-sizing: border-box;
-  padding-top: 3.75em; /* 60/16 */
+  padding-top: 4.6154vw;
+  padding-bottom: 6.4615vw;
   background-image: url(../images/bg-categories_320.jpg);
   background-position: center;
   background-size: cover;
@@ -48,10 +48,6 @@
 }
 
 @media (--500) {
-  .section--categories {
-    background-image: url(../images/bg-categories_500.jpg);
-  }
-
   .section--categories .section__body {
     flex-direction: row;
     justify-content: space-around;
@@ -59,10 +55,6 @@
 }
 
 @media (--800) {
-  .section--categories {
-    background-image: url(../images/bg-categories_800.jpg);
-  }
-
   .section--categories .section__body {
     justify-content: space-between;
   }
@@ -77,8 +69,25 @@
     width: 100%;
     background-color: seagreen;
   }
+}
 
-  .section--categories {
-    background-image: url(../images/bg-categories_1920.jpg);
+@each $i1, $i2, $i3 in (500, 800, 1050, 1920), (1000, 1600, 2100, 3840), (1500, 2400, 3150, 5760) {
+
+  @media (width >= $(i1)px) and (min-resolution: 1dppx) {
+    .section--categories {
+      background-image: url('../images/bg-categories_$(i1).jpg');
+    }
+  }
+
+  @media (width >= $(i1)px) and (min-resolution: 2dppx) {
+    .section--categories {
+      background-image: url('../images/bg-categories_$(i2)@2x.jpg');
+    }
+  }
+
+  @media (width >= $(i1)px) and (min-resolution: 3dppx) {
+    .section--categories {
+      background-image: url('../images/bg-categories_$(i3)@3x.jpg');
+    }
   }
 }
