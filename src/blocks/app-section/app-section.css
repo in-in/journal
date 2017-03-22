@@ -20,7 +20,7 @@
   box-sizing: border-box;
   padding-top: 4.6154vw;
   padding-bottom: 6.4615vw;
-  background-image: url(../images/bg-categories_320.jpg);
+  background-image: var(--gradient), url(../images/bg-categories_320.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,19 +75,19 @@
 
   @media (width >= $(i1)px) {
     .section--categories {
-      background-image: url('../images/bg-categories_$(i1).jpg');
+      background-image: var(--gradient), url('../images/bg-categories_$(i1).jpg');
     }
   }
 
   @media (width >= $(i1)px) and (min-resolution: 2dppx) {
     .section--categories {
-      background-image: url('../images/bg-categories_$(i2)@2x.jpg');
+      background-image: var(--gradient), url('../images/bg-categories_$(i2)@2x.jpg');
     }
   }
 
   @media (width >= $(i1)px) and (min-resolution: 3dppx) {
     .section--categories {
-      background-image: url('../images/bg-categories_$(i3)@3x.jpg');
+      background-image: var(--gradient), url('../images/bg-categories_$(i3)@3x.jpg');
     }
   }
 }
