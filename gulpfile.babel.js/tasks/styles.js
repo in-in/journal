@@ -10,6 +10,8 @@ import mediaMinmax from 'postcss-media-minmax';
 import customMedia from 'postcss-custom-media';
 import colorFunction from 'postcss-color-function';
 import eachLoop from 'postcss-each';
+import mqpacker from 'css-mqpacker';
+import csso from 'postcss-csso';
 
 const processors = [
   atImport({glob: true}),
@@ -18,7 +20,11 @@ const processors = [
   mediaMinmax(),
   customMedia(),
   colorFunction(),
-  autoprefixer({browsers: ['last 2 version']})
+  autoprefixer({browsers: ['last 2 version']}),
+  mqpacker({
+    sort: true
+  }),
+  csso()
 ];
 
 const styles = () => {

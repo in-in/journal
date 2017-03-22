@@ -73,7 +73,7 @@
 
 @each $i1, $i2, $i3 in (500, 800, 1050, 1920), (1000, 1600, 2100, 3840), (1500, 2400, 3150, 5760) {
 
-  @media (width >= $(i1)px) and (min-resolution: 1dppx) {
+  @media (width >= $(i1)px) {
     .section--categories {
       background-image: url('../images/bg-categories_$(i1).jpg');
     }
