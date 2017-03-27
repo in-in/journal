@@ -20,6 +20,10 @@
   padding-bottom: 1.688em; /* 27/16 */
 }
 
+.post-list__item-link {
+  text-decoration: none;
+}
+
 .post-list__item-title {
   font-weight: 600;
   font-size: .875em; /* 14/16 */

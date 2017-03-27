@@ -38,7 +38,7 @@
 /* section-title--simple */
 
 .section-title--simple {
-  background-color: pink;
+  padding-bottom: 1.563em; /* 25/16 */
 }
 
 .section-title--simple::before,
@@ -48,6 +48,7 @@
 
 .section-title--simple .section-title__text {
   position: static;
+  color: var(--whiteColor);
   transform: none;
 }
 

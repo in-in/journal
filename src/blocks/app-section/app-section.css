@@ -55,13 +55,15 @@
 }
 
 .section--posts-lists .section__list:last-child {
-  padding-bottom: 5em; /* 80/16 */
+  padding-bottom: 3.313em; /* 53/16 */
 }
 
 /* section--subscription */
 
 .section--subscription {
-  background-color: gold;
+  padding-top: 2.813em; /* 45/16 */
+  padding-bottom: 4.063em; /* 65/16 */
+  background-color: tan;
 }
 
 @media (--500) {

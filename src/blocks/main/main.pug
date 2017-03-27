@@ -6,6 +6,7 @@ include ../app-picture/app-picture
 include ../app-button/app-button
 include ../app-section/app-section
 include ../post-list/post-list
+include ../subscribe/subscribe
 
 mixin main()
   main.main&attributes(attributes)
@@ -85,4 +86,4 @@ mixin main()
           :title='"subscribe and stay in touch"',
           :nobg='true').section-title--simple
       template(slot='body')
-        span subscribe
+        subscribe
