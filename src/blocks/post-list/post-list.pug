@@ -1,0 +1,9 @@
+block append templates
+  template#post-list
+    .post-list
+      header.post-list__header
+        h4.post-list__title {{ title }}
+      ul.post-list__items
+        li.post-list__item(v-for='item in items')
+          p.post-list__item-title {{ item.title }}
+          time.post-list__item-date(:datetime='item.date.datetime') {{ item.date.time }}

@@ -5,6 +5,7 @@ include ../card/card
 include ../app-picture/app-picture
 include ../app-button/app-button
 include ../app-section/app-section
+include ../post-list/post-list
 
 mixin main()
   main.main&attributes(attributes)
@@ -60,7 +61,7 @@ mixin main()
       template(slot='header')
         app-section-title(:title='"categories"')
       template(slot='body')
-        template(v-for='categorie in categoriesList') 
+        template(v-for='categorie in categoriesList')
           card(
             :class='[ "card--" + categorie.type ]',
             :buttons='false',
@@ -68,10 +69,16 @@ mixin main()
             .card__image(slot='card-image')
               app-picture(:img='categorie.img')
             template(slot='card-tag') {{categorie.category}}
-
+    //- section--posts-lists
     app-section.section--posts-lists
       template(slot='body')
-        span posts list
+        .section__list
+          post-list(:title='"Popular posts"', :items='popularPosts')
+        .section__list
+          post-list(:title='"New Articles"', :items='newPosts')
+        .section__list
+          post-list(:title='"Most commented posts"', :items='mostCommentedPosts')
+    //- section--subscription
     app-section(:title='true').section--subscription
       template(slot='header')
         app-section-title(

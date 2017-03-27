@@ -3,7 +3,7 @@ const carouselContent = [
     type: 'horizontal',
     img: {
       name: 'slide1',
-      widht: [ 872, 820, 719, 603, 467, 300 ]
+      widht: [872, 820, 719, 603, 467, 300]
     },
     category: 'travel',
     title: 'One morning, when Gregor',
@@ -13,7 +13,7 @@ const carouselContent = [
     type: 'horizontal',
     img: {
       name: 'slide2',
-      widht: [ 872, 829, 754, 682, 604, 517, 418, 300 ]
+      widht: [872, 829, 754, 682, 604, 517, 418, 300]
     },
     category: 'technology',
     title: 'The bedding was hardly',
@@ -23,7 +23,7 @@ const carouselContent = [
     type: 'horizontal',
     img: {
       name: 'slide3',
-      widht: [ 872, 839, 702, 525, 300 ]
+      widht: [872, 839, 702, 525, 300]
     },
     category: 'business',
     title: 'What\'s happened to me?',
@@ -33,7 +33,7 @@ const carouselContent = [
     type: 'horizontal',
     img: {
       name: 'slide4',
-      widht: [ 872, 824, 724, 605, 466, 300 ]
+      widht: [872, 824, 724, 605, 466, 300]
     },
     category: 'entertainment',
     title: 'A collection of textile',
@@ -46,7 +46,7 @@ const latestPosts = [
     type: 'vertical',
     img: {
       name: 'post1',
-      widht: [ 780, 683, 465, 230 ]
+      widht: [780, 683, 465, 230]
     },
     category: 'technology',
     title: 'It was a simple matter to throw off the covers',
@@ -56,7 +56,7 @@ const latestPosts = [
     type: 'vertical',
     img: {
       name: 'post2',
-      widht: [ 780, 740, 673, 611, 535, 447, 351, 230 ]
+      widht: [780, 740, 673, 611, 535, 447, 351, 230]
     },
     category: 'business',
     title: 'The first thing he wanted to do was get the lower part',
@@ -66,7 +66,7 @@ const latestPosts = [
     type: 'vertical',
     img: {
       name: 'post3',
-      widht: [ 780, 743, 639, 525, 395, 230 ]
+      widht: [780, 743, 639, 525, 395, 230]
     },
     category: 'travel',
     title: 'At the same time, though, he did not forget to remind himself that calm',
@@ -76,7 +76,7 @@ const latestPosts = [
     type: 'vertical',
     img: {
       name: 'post4',
-      widht: [ 780, 709, 481, 230 ]
+      widht: [780, 709, 481, 230]
     },
     category: 'entertainment',
     title: 'It took just as much effort to get back to where he had been earlier',
@@ -86,7 +86,7 @@ const latestPosts = [
     type: 'vertical',
     img: {
       name: 'post5',
-      widht: [ 780, 678, 467, 230 ]
+      widht: [780, 678, 467, 230]
     },
     category: 'travel',
     title: 'And he lay there quietly a while longer',
@@ -96,7 +96,7 @@ const latestPosts = [
     type: 'vertical',
     img: {
       name: 'post6',
-      widht: [ 780, 707, 478, 230 ]
+      widht: [780, 707, 478, 230]
     },
     category: 'technology',
     title: 'When Gregor was already sticking half way out of the bed',
@@ -106,7 +106,7 @@ const latestPosts = [
     type: 'vertical',
     img: {
       name: 'post7',
-      widht: [ 780, 721, 519, 230 ]
+      widht: [780, 721, 519, 230]
     },
     category: 'business',
     title: 'After a while he had already moved so far across',
@@ -116,7 +116,7 @@ const latestPosts = [
     type: 'vertical',
     img: {
       name: 'post8',
-      widht: [ 780, 758, 618, 450, 230 ]
+      widht: [780, 758, 618, 450, 230]
     },
     category: 'entertainment',
     title: 'For a moment everything remained quiet',
@@ -129,7 +129,7 @@ const categoriesList = [
     type: 'categorie',
     img: {
       name: 'post4',
-      widht: [ 780, 709, 481, 230 ]
+      widht: [780, 709, 481, 230]
     },
     category: 'entertainment'
   },
@@ -137,7 +137,7 @@ const categoriesList = [
     type: 'categorie',
     img: {
       name: 'slide1',
-      widht: [ 872, 820, 719, 603, 467, 300 ]
+      widht: [872, 820, 719, 603, 467, 300]
     },
     category: 'travel'
   },
@@ -145,9 +145,102 @@ const categoriesList = [
     type: 'categorie',
     img: {
       name: 'post1',
-      widht: [ 780, 683, 465, 230 ]
+      widht: [780, 683, 465, 230]
     },
     category: 'technology'
+  }
+];
+
+const popularPosts = [
+  {
+    title: 'Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.',
+    date: {
+      datetime: '2015-21-08',
+      time: 'August 21 2015'
+    }
+  },
+  {
+    title: 'He was still hurriedly thinking all this through, unable to decide to get out of the bed, when the clock struck quarter to seven',
+    date: {
+      datetime: '2015-21-08',
+      time: 'August 22 2015'
+    }
+  },
+  {
+    title: 'As if from deep inside him, there was a painful and uncontrollable squeaking mixed in with it',
+    date: {
+      datetime: '2015-23-08',
+      time: 'August 23 2015'
+    }
+  },
+  {
+    title: 'The first thing he wanted to do was to get up in peace without being disturbed, to get dressed, and most of all to have his breakfast.',
+    date: {
+      datetime: '2015-24-08',
+      time: 'August 24 2015'
+    }
+  }
+];
+
+const newPosts = [
+  {
+    title: 'It was a simple matter to throw off the covers',
+    date: {
+      datetime: '2015-15-07',
+      time: 'July 15 2015'
+    }
+  },
+  {
+    title: 'The first thing he wanted to do was get the lower part',
+    date: {
+      datetime: '2015-16-07',
+      time: 'July 16 2015'
+    }
+  },
+  {
+    title: 'At the same time, though, he did not forget to remind himself that calm',
+    date: {
+      datetime: '2015-17-07',
+      time: 'July 17 2015'
+    }
+  },
+  {
+    title: 'It took just as much effort to get back to where he had been earlier',
+    date: {
+      datetime: '2015-18-07',
+      time: 'July 18 2015'
+    }
+  }
+];
+
+const mostCommentedPosts = [
+  {
+    title: 'The first thing he wanted to do was get the lower part of his body out of the bed, but he had never seen this lower part, and could not imagine what it looked like',
+    date: {
+      datetime: '2015-21-09',
+      time: 'September 21 2015'
+    }
+  },
+  {
+    title: 'So then he tried to get the top part of his body out of the bed first, carefully turning his head to the side',
+    date: {
+      datetime: '2015-21-09',
+      time: 'September 22 2015'
+    }
+  },
+  {
+    title: 'It took just as much effort to get back to where he had been earlier, but when he lay there sighing',
+    date: {
+      datetime: '2015-23-09',
+      time: 'September 23 2015'
+    }
+  },
+  {
+    title: 'At times like this he would direct his eyes to the window and look out as clearly as he could',
+    date: {
+      datetime: '2015-24-09',
+      time: 'September 24 2015'
+    }
   }
 ];
 
@@ -159,6 +252,9 @@ new Vue({
     carouselContent,
     latestPosts,
     categoriesList,
+    popularPosts,
+    newPosts,
+    mostCommentedPosts,
     itemsInRow: 4
   },
   mounted() {

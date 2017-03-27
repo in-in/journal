@@ -11,7 +11,6 @@
   justify-content: center;
   box-sizing: border-box;
   padding-top: 3.8491vw;
-  background-color: tan;
 }
 
 /* section--categories */
@@ -38,7 +37,25 @@
 /* section--posts-lists */
 
 .section--posts-lists {
-  background-color: tan;
+  background-color: var(--sectionBg);
+}
+
+.section--posts-lists .section__body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section--posts-lists .section__list {
+  flex: 1 0 20em; /* 320/16 */
+  box-sizing: border-box;
+  padding-top: 4.375em; /* 70/16 */
+  padding-right: 3vw;
+  padding-left: 3vw;
+}
+
+.section--posts-lists .section__list:last-child {
+  padding-bottom: 5em; /* 80/16 */
 }
 
 /* section--subscription */
@@ -67,7 +84,6 @@
     justify-content: center;
     max-height: 66.563em;
     width: 100%;
-    background-color: seagreen;
   }
 }
 
