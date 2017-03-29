@@ -1,0 +1,11 @@
+.footer {
+  background-color: pink;
+
+  &__top {
+    background-color: skyblue;
+  }
+
+  &__bottom {
+    background-color: tan;
+  }
+}
