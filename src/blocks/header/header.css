@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background-image: var(--headerGradient);
+  background-image: var(--tripleLightGradient);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

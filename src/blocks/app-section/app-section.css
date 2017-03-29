@@ -63,7 +63,7 @@
 .section--subscription {
   padding-top: 2.813em; /* 45/16 */
   padding-bottom: 4.063em; /* 65/16 */
-  background-color: tan;
+  background-image: var(--tripleGradient);
 }
 
 @media (--500) {

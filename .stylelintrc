@@ -215,8 +215,6 @@
         "font-stretch",
         "font-size",
         "font-family",
-        "-moz-osx-font-smoothing",
-        "-webkit-font-smoothing",
         "line-height",
         "opacity",
         "filter",

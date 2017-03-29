@@ -2,14 +2,16 @@
   --whiteColor: #fff;
   --mainColorLeft: #484289;
   --mainColorRight: #116987;
+  --actionButton: color(var(--mainColorRight) s(-22) l(+13));
   --veryLightGrey: #c7c7c7;
   --accentColor: #2d8cd3;
   --cardDesc: #787878;
   --cardBorder: #eaeaea;
   --sectionBg: #f6f6f6;
   --lightText: #6c6c6c;
-  --headerGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)) 35%, color(var(--mainColorRight) a(78%)) 65%, color(var(--mainColorRight) a(78%)) 0);
   --gradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)), color(var(--mainColorRight) a(72%)));
+  --tripleLightGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)) 35%, color(var(--mainColorRight) a(78%)) 65%, color(var(--mainColorRight) a(78%)) 0);
+  --tripleGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(92%)) 35%, color(var(--mainColorRight) a(92%)) 65%, color(var(--mainColorRight) a(92%)) 0);
 }
 
 @custom-media --320 (width >= 320px);

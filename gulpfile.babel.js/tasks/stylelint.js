@@ -5,7 +5,6 @@ const $ = gulpLoadPlugin();
 
 const stylelint = () => {
   return gulp.src(paths.styles.watch, {since: gulp.lastRun(stylelint)})
-    .pipe($.stylefmt())
     .pipe($.stylelint({
       failAfterError: false,
       reporters: [
