@@ -1,16 +1,24 @@
 .subscribe__field {
   display: flex;
-  background-color: pink;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 52.5em; /* 840/16 */
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 3vw;
+  padding-left: 3vw;
 }
 
 .subscribe__email,
 .subscribe__submit {
   display: block;
-  flex: 1 0 10em;
+  width: 100%;
   height: 3.5em; /* 42/12 */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   border-radius: .833em; /* 10/12 */
   background-color: var(--whiteColor);
   color: var(--cardDesc);
@@ -22,6 +30,11 @@
 }
 
 .subscribe__email {
+
+  @media (--800) {
+    border: 1px solid red;
+  }
+  max-width: 36.875em; /* 590/16 */
   padding-right: 1.5em; /* 18/12 */
   padding-left: 1.5em; /* 18/12 */
 }
@@ -31,7 +44,12 @@
 }
 
 .subscribe__submit {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 200px;
+  max-width: 9.688em; /* 155/16 */
   background-color: var(--mainColorRight);
   color: var(--whiteColor);
   font-weight: 700;
+  cursor: pointer;
 }
