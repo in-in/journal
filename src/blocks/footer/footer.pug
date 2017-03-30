@@ -1,10 +1,19 @@
-include ../container/container.pug
+include ../container/container
+include ../app-list/app-list
+include ../icon/icon
 
 mixin footer()
   footer.footer&attributes(attributes)
     .footer__top
       +container()
-        span footer top
+        .footer__wrap
+          .footer__col
+            a.footer__logo(href='index.html', aria-label='Journal')
+              +icon('logo', '170.19516', '25.436251').logo
+          .footer__col
+            app-list.app-list--light(:title='"Recent posts"', :items='recentPosts')
+          .footer__col
+            app-list.app-list--light(:title='"instagram"')
     .footer__bottom
       +container()
         span footer bottom

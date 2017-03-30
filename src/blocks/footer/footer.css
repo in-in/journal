@@ -1,4 +1,5 @@
 .footer {
+  padding-top: 4.125em; /* 66/16 */
   background-color: pink;
 
   &__top {
@@ -7,5 +8,20 @@
 
   &__bottom {
     background-color: tan;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+    width: var(--col3);
+    background-color: darkslateblue;
+  }
+
+  &__logo {
+    display: block;
+    width: 8.438em; /* 135/16 */
   }
 }

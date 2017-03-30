@@ -5,7 +5,7 @@ include ../card/card
 include ../app-picture/app-picture
 include ../app-button/app-button
 include ../app-section/app-section
-include ../post-list/post-list
+include ../app-list/app-list
 include ../subscribe/subscribe
 
 mixin main()
@@ -74,11 +74,11 @@ mixin main()
     app-section.section--posts-lists
       template(slot='body')
         .section__list
-          post-list(:title='"Popular posts"', :items='popularPosts')
+          app-list(:title='"Popular posts"', :items='popularPosts')
         .section__list
-          post-list(:title='"New Articles"', :items='newPosts')
+          app-list(:title='"New Articles"', :items='newPosts')
         .section__list
-          post-list(:title='"Most commented posts"', :items='mostCommentedPosts')
+          app-list(:title='"Most commented posts"', :items='mostCommentedPosts')
     //- section--subscription
     app-section(:title='true').section--subscription
       template(slot='header')

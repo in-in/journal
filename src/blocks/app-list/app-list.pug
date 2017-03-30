@@ -1,0 +1,10 @@
+block append templates
+  template#app-list
+    .app-list
+      header.app-list__header
+        h4.app-list__title {{ title }}
+      ul.app-list__items(v-if='items')
+        li.app-list__item(v-for='item in items')
+          a.app-list__item-link(href='#')
+            p.app-list__item-title {{ item.title }}
+            time.app-list__item-date(:datetime='item.date.datetime') {{ item.date.time }}

@@ -244,6 +244,30 @@ const mostCommentedPosts = [
   }
 ];
 
+const recentPosts = [
+  {
+    title: 'Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.',
+    date: {
+      datetime: '2015-21-08',
+      time: 'March 21 2017'
+    }
+  },
+  {
+    title: 'He was still hurriedly thinking all this through, unable to decide to get out of the bed, when the clock struck quarter to seven',
+    date: {
+      datetime: '2015-21-08',
+      time: 'March 22 2017'
+    }
+  },
+  {
+    title: 'As if from deep inside him, there was a painful and uncontrollable squeaking mixed in with it',
+    date: {
+      datetime: '2015-23-08',
+      time: 'March 23 2017'
+    }
+  }
+];
+
 new Vue({
   el: '.page',
   data: {
@@ -255,6 +279,7 @@ new Vue({
     popularPosts,
     newPosts,
     mostCommentedPosts,
+    recentPosts,
     itemsInRow: 4
   },
   mounted() {

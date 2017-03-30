@@ -57,7 +57,7 @@
     padding-top: 4.375em; /* 70/16 */
 
     @media (--800) {
-      width: 29.0598%;
+      width: var(--col3);
     }
   }
 }

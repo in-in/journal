@@ -12,6 +12,7 @@
   --gradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)), color(var(--mainColorRight) a(72%)));
   --tripleLightGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)) 35%, color(var(--mainColorRight) a(78%)) 65%, color(var(--mainColorRight) a(78%)) 0);
   --tripleGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(92%)) 35%, color(var(--mainColorRight) a(92%)) 65%, color(var(--mainColorRight) a(92%)) 0);
+  --col3: 29.0598%;
 }
 
 @custom-media --320 (width >= 320px);
