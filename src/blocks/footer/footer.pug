@@ -1,6 +1,7 @@
 include ../container/container
 include ../app-list/app-list
 include ../icon/icon
+include ../app-contact/app-contact
 
 mixin footer()
   footer.footer&attributes(attributes)
@@ -10,6 +11,11 @@ mixin footer()
           .footer__col
             a.footer__logo(href='index.html', aria-label='Journal')
               +icon('logo', '170.19516', '25.436251').logo
+            p.footer__text It took just as much effort to get back to where he had been earlier, but when he lay there sighing, and was once more watching his legs as they struggled against each other even harder than before.
+            .footer__contact-list
+              app-contact(:type='"place"')
+              app-contact(:type='"phone"')
+              app-contact(:type='"email"')
           .footer__col
             app-list.app-list--light(:title='"Recent posts"', :items='recentPosts')
           .footer__col

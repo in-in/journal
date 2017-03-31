@@ -1,0 +1,6 @@
+block append templates
+  template#app-contact
+    .app-contact(v-if='type === "place"') {{ type }}
+    .app-contact(v-else-if='type === "phone"') {{ type }}
+    .app-contact(v-else-if='type === "email"') {{ type }}
+      
