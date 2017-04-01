@@ -1,0 +1,5 @@
+block append templates
+  template#app-icon
+    svg.app-icon(:viewbox='createViewbox')
+      use(:xlink:href='addPrefix')
+      slot

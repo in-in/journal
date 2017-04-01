@@ -47,8 +47,11 @@
 
 .app-list--light {
   & .app-list__title,
-  & .app-list__item-title,
-  & .app-list__item-date {
+  & .app-list__item-title {
     color: #fff;
+  }
+
+  & .app-list__item-date {
+    color: var(--calmText);
   }
 }
