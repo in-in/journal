@@ -27,7 +27,7 @@
 
   &__text {
     margin: 0;
-    color: var(--calmText);
+    color: var(--calmColor);
     font-size: .875em; /* 14/16 */
   }
 }

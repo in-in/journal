@@ -2,10 +2,15 @@ include ../app-icon/app-icon
 
 block append templates
   template#app-contact
-    .app-contact(v-if='type === "place"') {{ type }}
-      app-icon(:name='type', :width='2', :height='5')
-    .app-contact(v-else-if='type === "phone"') {{ type }}
-      app-icon(:name='type')
-    .app-contact(v-else-if='type === "email"') {{ type }}
-      app-icon(:name='type')
-      
+    .app-contact(v-if='type === "place"')
+      .app-contact__icon
+        app-icon(:name='type')
+      p.app-contact__text {{ contact }}
+    .app-contact(v-else-if='type === "phone"')
+      .app-contact__icon
+        app-icon(:name='type')
+      a.app-contact__link(:href='contact | formatTel') {{ contact }}
+    .app-contact(v-else-if='type === "email"')
+      .app-contact__icon
+        app-icon(:name='type')
+      a.app-contact__link(:href='"mailto:" + contact') {{ contact }}

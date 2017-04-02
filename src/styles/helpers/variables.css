@@ -9,7 +9,7 @@
   --cardBorder: #eaeaea;
   --sectionBg: #f6f6f6;
   --lightText: #6c6c6c;
-  --calmText: #9ab3cc;
+  --calmColor: #9ab3cc;
   --gradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)), color(var(--mainColorRight) a(72%)));
   --tripleLightGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(80%)) 35%, color(var(--mainColorRight) a(78%)) 65%, color(var(--mainColorRight) a(78%)) 0);
   --tripleGradient: linear-gradient(122deg, color(var(--mainColorLeft) a(92%)) 35%, color(var(--mainColorRight) a(92%)) 65%, color(var(--mainColorRight) a(92%)) 0);

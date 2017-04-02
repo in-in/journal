@@ -1,3 +1,22 @@
-.contact {
-  background-color: lightgreen;
+.app-contact {
+  display: flex;
+  background-color: snow;
+  color: var(--calmColor);
+
+  &__icon {
+    min-width: 1em; /* 14/16 */
+    margin-right: .625em; /* 10/16 */
+    fill: currentColor;
+  }
+
+  &__link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__text {
+    margin: 0;
+  }
 }
