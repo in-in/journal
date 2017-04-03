@@ -306,10 +306,5 @@ new Vue({
       }
       return !(i % 2);
     }
-  },
-  filters: {
-    escapeHtml(val) {
-      return val.toUpperCase();
-    }
   }
 });

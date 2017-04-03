@@ -5,7 +5,7 @@ block append templates
     .app-contact(v-if='type === "place"')
       .app-contact__icon
         app-icon(:name='type')
-      p.app-contact__text {{ contact }}
+      p.app-contact__text(v-html='contact')
     .app-contact(v-else-if='type === "phone"')
       .app-contact__icon
         app-icon(:name='type')

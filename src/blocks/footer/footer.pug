@@ -12,10 +12,13 @@ mixin footer()
             a.footer__logo(href='index.html', aria-label='Journal')
               app-icon(:name='"logo"', :width='170.19516', :height='25.436251')
             p.footer__text It took just as much effort to get back to where he had been earlier, but when he lay there sighing, and was once more watching his legs as they struggled against each other even harder than before.
-            .footer__contact-list
-              app-contact(:type='"place"', :contact='"Address: 121 First Street, <br> Anytown, CA&nbsp;1244&nbsp;USA." | escapeHtml')
-              app-contact(:type='"phone"', :contact='"(800) 0456 4567 890"')
-              app-contact(:type='"email"', :contact='"info@journalblog.com"')
+            ul.footer__contact-list
+              li.footer__contact-list-item
+                app-contact(:type='"place"', :contact='"Address: 121 First Street, <br> Anytown, CA&nbsp;1244&nbsp;USA."')
+              li.footer__contact-list-item
+                app-contact(:type='"phone"', :contact='"(800) 0456 4567 890"')
+              li.footer__contact-list-item
+                app-contact(:type='"email"', :contact='"info@journalblog.com"')
           .footer__col
             app-list.app-list--light(:title='"Recent posts"', :items='recentPosts')
           .footer__col

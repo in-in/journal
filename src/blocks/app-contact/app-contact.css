@@ -1,7 +1,6 @@
 .app-contact {
   display: flex;
-  background-color: snow;
-  color: var(--calmColor);
+  color: inherit;
 
   &__icon {
     min-width: 1em; /* 14/16 */
