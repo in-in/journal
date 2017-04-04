@@ -268,6 +268,29 @@ const recentPosts = [
   }
 ];
 
+const socialButtons = [
+  {
+    icon: 'facebook',
+    link: 'https://www.facebook.com/'
+  },
+  {
+    icon: 'google-plus',
+    link: 'https://plus.google.com'
+  },
+  {
+    icon: 'linkedin',
+    link: 'https://www.linkedin.com/'
+  },
+  {
+    icon: 'pinterest',
+    link: 'https://www.pinterest.com/'
+  },
+  {
+    icon: 'twitter',
+    link: 'https://twitter.com'
+  }
+];
+
 new Vue({
   el: '.page',
   data: {
@@ -280,6 +303,7 @@ new Vue({
     newPosts,
     mostCommentedPosts,
     recentPosts,
+    socialButtons,
     itemsInRow: 4
   },
   mounted() {

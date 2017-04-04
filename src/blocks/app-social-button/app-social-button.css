@@ -1,0 +1,9 @@
+.app-social-button {
+  display: block;
+  color: currentColor;
+  text-decoration: none;
+
+  &__icon {
+    fill: currentColor;
+  }
+}

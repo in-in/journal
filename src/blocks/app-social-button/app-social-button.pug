@@ -1,0 +1,6 @@
+include ../app-icon/app-icon
+
+block append templates
+  template#app-social-button
+    a.app-social-button(:href='link')
+      app-icon(:name='icon').app-social-button__icon

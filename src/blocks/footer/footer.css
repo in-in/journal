@@ -44,4 +44,27 @@
       font-size: .875em; /* 14/16 */
     }
   }
+
+  &__social-button-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: .375em; /* 6/16 */
+    list-style: none;
+  }
+
+  &__social-button-item {
+    width: 1em;
+    color: var(--calmColor);
+    transition: color .2s;
+
+    & + & {
+      margin-right: .5em;
+      margin-left: .5em;
+    }
+
+    &:hover {
+      color: color(var(--calmColor) l(+20%));
+    }
+  }
 }
