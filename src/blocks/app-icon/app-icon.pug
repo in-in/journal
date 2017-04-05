@@ -1,4 +1,4 @@
 block append templates
   template#app-icon
     svg.app-icon(:view-box.camel='createViewbox')
-      use(:xlink:href='addPrefix')
+      use(xmlns:xlink='http://www.w3.org/1999/xlink', :xlink:href='addPrefix')

@@ -1,4 +1,3 @@
-include ../icon/icon
 include ../carousel/carousel
 include ../carousel-item/carousel-item
 include ../card/card
@@ -25,7 +24,7 @@ mixin main()
             app-button(slot='card-buttons', :hide-text='false').card__button.card__button-read-more
               | Read More
               template(slot='app-button-icon')
-                +icon('arrow2', 14, 10).card__icon
+                app-icon(:name='"arrow2"', :width='14', height='10').card__icon
 
     //- section--latest-posts
     app-section(:title='true').section--latest-posts
@@ -47,15 +46,15 @@ mixin main()
               app-button(slot='card-buttons').card__button.card__button-like
                 | Like
                 template(slot='app-button-icon')
-                  +icon('thumb', 73, 66).card__icon
+                  app-icon(:name='"thumb"', :width='73', height='66').card__icon
               app-button(slot='card-buttons').card__button.card__button-comment
                 | Comments
                 template(slot='app-button-icon')
-                  +icon('bubble', 82, 72).card__icon
+                  app-icon(:name='"bubble"', :width='82', height='72').card__icon
               app-button(slot='card-buttons').card__button.card__button-read-more
                 | Read More
                 template(slot='app-button-icon')
-                  +icon('arrow2', 14, 10).card__icon
+                  app-icon(:name='"arrow2"', :width='14', height='10').card__icon
 
     //- section--categories
     app-section(:title='true').section--categories

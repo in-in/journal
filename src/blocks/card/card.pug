@@ -1,10 +1,12 @@
+include ../app-icon/app-icon
+
 block append templates
   template#card
     article.card
       slot(name='card-image')
       .card__body
         .card__tag
-          +icon('tag', 256, 44).card__tag-bg
+          app-icon(:name='"tag"', :width='256', height='44').card__tag-bg
           span
             slot(name='card-tag')
         slot(name='card-title')

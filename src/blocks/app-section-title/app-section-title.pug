@@ -1,8 +1,8 @@
-include ../icon/icon
+include ../app-icon/app-icon
 
 block append templates
   template#app-section-title
     .section-title
       template(v-if='!nobg')
-        +icon('tag', 256, 44).section-title__bg
+        app-icon(:name='"tag"', :width='256', height='44').section-title__bg
       h2.section-title__text {{ title }}

@@ -6,13 +6,13 @@ Vue.component('carousel-item', {
     };
   },
   computed: {
+    visible() {
+      return this.index === this.$parent.index;
+    },
     transitionDirection() {
       if (this.$parent.direction) {
         return `carousel-item-${this.$parent.direction}`;
       }
-    },
-    visible() {
-      return this.index === this.$parent.index;
     }
   }
 });

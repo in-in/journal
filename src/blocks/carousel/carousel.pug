@@ -1,16 +1,18 @@
+include ../app-icon/app-icon
+
 block append templates
   template#carousel
     section.carousel(aria-label='Most Read Posts')
       button(
-        type='button',
-        @click.prevent='prev'
+          type='button',
+          @click.prevent='prev'
         ).carousel__controls.carousel__controls--prev
         i.carousel__controls-wrap
-          +icon('arrow', 12, 20).carousel__icon.carousel__icon--prev
+          app-icon(:name='"arrow"', :width='12', height='20').carousel__icon.carousel__icon--prev
       slot
       button(
-        type='button',
-        @click.prevent='next'
+          type='button',
+          @click.prevent='next'
         ).carousel__controls.carousel__controls--next
         i.carousel__controls-wrap
-          +icon('arrow', 12, 20).carousel__icon.carousel__icon--next
+          app-icon(:name='"arrow"', :width='12', height='20').carousel__icon.carousel__icon--next
