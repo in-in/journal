@@ -291,6 +291,27 @@ const socialButtons = [
   }
 ];
 
+const instagramGallery = [
+  {
+    src: 'https://satyr.io/300x300/'
+  },
+  {
+    src: 'https://satyr.io/100x100/'
+  },
+  {
+    src: 'https://satyr.io/100x100/'
+  },
+  {
+    src: 'https://satyr.io/100x100/'
+  },
+  {
+    src: 'https://satyr.io/100x100/'
+  },
+  {
+    src: 'https://satyr.io/100x100/'
+  }
+];
+
 new Vue({
   el: '.page',
   data: {
@@ -304,6 +325,7 @@ new Vue({
     mostCommentedPosts,
     recentPosts,
     socialButtons,
+    instagramGallery,
     itemsInRow: 4
   },
   mounted() {

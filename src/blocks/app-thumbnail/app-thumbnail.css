@@ -1,0 +1,12 @@
+.app-thumbnail {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: lightgreen;
+  text-decoration: none;
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+}

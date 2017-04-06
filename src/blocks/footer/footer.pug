@@ -2,12 +2,22 @@ include ../container/container
 include ../app-list/app-list
 include ../app-contact/app-contact
 include ../app-social-button/app-social-button
+include ../app-thumbnail/app-thumbnail
+include ../app-button/app-button
+include ../app-icon/app-icon
 
 mixin footer()
   footer.footer&attributes(attributes)
     .footer__top
       +container()
         .footer__wrap
+          .footer__col
+            app-list.app-list--light(:title='"instagram"')
+            ul.footer__gallery
+              li.footer__gallery-item(v-for='item in instagramGallery')
+                app-thumbnail(:src='item.src')
+          .footer__col
+            app-list.app-list--light(:title='"Recent posts"', :items='recentPosts')
           .footer__col
             a.footer__logo(href='index.html', aria-label='Journal')
               app-icon(:name='"logo"', :width='170.19516', :height='25.436251')
@@ -22,10 +32,11 @@ mixin footer()
             ul.footer__social-button-list
               li.footer__social-button-item(v-for='button in socialButtons')
                 app-social-button(:icon='button.icon', :link='button.link')
-          .footer__col
-            app-list.app-list--light(:title='"Recent posts"', :items='recentPosts')
-          .footer__col
-            app-list.app-list--light(:title='"instagram"')
+          .footer__button-wrap
+            app-button(slot='card-buttons').footer__button-up
+              | Go to top
+              template(slot='app-button-icon')
+                app-icon(:name='"arrow"', :width='12', height='20').footer__button-up-icon
     .footer__bottom
       +container()
         span footer bottom
