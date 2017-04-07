@@ -5,7 +5,7 @@ block append templates
     section.carousel(aria-label='Most Read Posts')
       button(
           type='button',
-          @click.prevent='prev'
+          @click.prevent='prev',
         ).carousel__controls.carousel__controls--prev
         i.carousel__controls-wrap
           app-icon(:name='"arrow"', :width='12', height='20').carousel__icon.carousel__icon--prev

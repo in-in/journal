@@ -351,6 +351,14 @@ new Vue({
         return i % 2;
       }
       return !(i % 2);
+    },
+    goToUp() {
+      const scrollStep = -window.scrollY / (1000 / 15);
+      const scrollInterval = setInterval(() => {
+        if ( window.scrollY !== 0 ) {
+          window.scrollBy( 0, scrollStep );
+        }else {clearInterval(scrollInterval);}
+      }, 15);
     }
   }
 });

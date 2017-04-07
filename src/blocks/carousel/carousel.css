@@ -99,6 +99,7 @@
 .carousel__icon {
   display: block;
   width: .75rem;
+  fill: transparent;
   stroke: var(--accentColor);
   stroke-width: .125rem;
 }

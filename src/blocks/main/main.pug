@@ -21,10 +21,10 @@ mixin main()
           h4.card__title(slot='card-title') {{slide.title}}
           p.card__desc(slot='card-desc') {{slide.desc}}
           .card__button-group(slot='card-buttons')
-            app-button(slot='card-buttons', :hide-text='false').card__button.card__button-read-more
+            app-button(slot='card-buttons', :hide-text='false', ).card__button.card__button-read-more
               | Read More
               template(slot='app-button-icon')
-                app-icon(:name='"arrow2"', :width='14', height='10').card__icon
+                app-icon(:name='"arrow2"', :width='14', :height='10').card__icon
 
     //- section--latest-posts
     app-section(:title='true').section--latest-posts
@@ -46,15 +46,15 @@ mixin main()
               app-button(slot='card-buttons').card__button.card__button-like
                 | Like
                 template(slot='app-button-icon')
-                  app-icon(:name='"thumb"', :width='73', height='66').card__icon
+                  app-icon(:name='"thumb"', :width='73', :height='66').card__icon
               app-button(slot='card-buttons').card__button.card__button-comment
                 | Comments
                 template(slot='app-button-icon')
-                  app-icon(:name='"bubble"', :width='82', height='72').card__icon
+                  app-icon(:name='"bubble"', :width='82', :height='72').card__icon
               app-button(slot='card-buttons').card__button.card__button-read-more
                 | Read More
                 template(slot='app-button-icon')
-                  app-icon(:name='"arrow2"', :width='14', height='10').card__icon
+                  app-icon(:name='"arrow2"', :width='14', :height='10').card__icon
 
     //- section--categories
     app-section(:title='true').section--categories

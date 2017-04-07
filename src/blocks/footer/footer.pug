@@ -32,11 +32,11 @@ mixin footer()
             ul.footer__social-button-list
               li.footer__social-button-item(v-for='button in socialButtons')
                 app-social-button(:icon='button.icon', :link='button.link')
-          .footer__button-wrap
-            app-button(slot='card-buttons').footer__button-up
-              | Go to top
-              template(slot='app-button-icon')
-                app-icon(:name='"arrow"', :width='12', height='20').footer__button-up-icon
+      .footer__button-wrap
+        app-button(@click.native='goToUp').footer__button-up
+          | Go to top
+          template(slot='app-button-icon')
+            app-icon(:name='"arrow"', :width='12', :height='20').footer__button-up-icon
     .footer__bottom
       +container()
         span footer bottom
