@@ -2,12 +2,10 @@
   padding-top: 4.125em; /* 66/16 */
   background-color: #39447c;
 
-  &__top {
-    /* background-color: skyblue; */
-  }
-
   &__bottom {
-    background-color: tan;
+    display: flex;
+    align-items: center;
+    height: 5.313em; /* 85/16 */
   }
 
   &__wrap {
@@ -135,9 +133,9 @@
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: seagreen;
     color: color(#fff a(45%));
     text-align: center;
+    transform: translateY(50%);
 
     &::before,
     &::after {
@@ -169,6 +167,13 @@
       fill: transparent;
       stroke: #fff;
     }
+  }
+
+  &__copyright,
+  &__link-list {
+    color: var(--calmColor);
+    font-size: .75em; /* 12/16 */
+    line-height: 2;
   }
 }
 

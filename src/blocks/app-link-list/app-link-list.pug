@@ -1,0 +1,5 @@
+block append templates
+  template#app-link-list
+    ul.app-link-list
+      li.app-link-list__item(v-for='item in links')
+        a.app-link-list__link(:href='item.link') {{ item.text }}

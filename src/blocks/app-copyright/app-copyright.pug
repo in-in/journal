@@ -1,0 +1,8 @@
+block append templates
+  template#app-copyright
+    .app-copyright
+      span.app-copyright__symbol(v-html='symbol')
+      | &nbsp;
+      span.app-copyright__year {{ year }}
+      | &nbsp;
+      span.app-copyright__text {{ text }}

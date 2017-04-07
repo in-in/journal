@@ -292,23 +292,22 @@ const socialButtons = [
 ];
 
 const instagramGallery = [
+  {src: 'https://satyr.io/300x300/'},
+  {src: 'https://satyr.io/100x100/'},
+  {src: 'https://satyr.io/100x100/'},
+  {src: 'https://satyr.io/100x100/'},
+  {src: 'https://satyr.io/100x100/'},
+  {src: 'https://satyr.io/100x100/'}
+];
+
+const footerLinkList = [
   {
-    src: 'https://satyr.io/300x300/'
+    link: 'https://en.wikipedia.org/wiki/Privacy_policy',
+    text: 'Privacy Policy'
   },
   {
-    src: 'https://satyr.io/100x100/'
-  },
-  {
-    src: 'https://satyr.io/100x100/'
-  },
-  {
-    src: 'https://satyr.io/100x100/'
-  },
-  {
-    src: 'https://satyr.io/100x100/'
-  },
-  {
-    src: 'https://satyr.io/100x100/'
+    link: 'https://en.wikipedia.org/wiki/Terms_of_service',
+    text: 'Terms & Conditions'
   }
 ];
 
@@ -326,6 +325,7 @@ new Vue({
     recentPosts,
     socialButtons,
     instagramGallery,
+    footerLinkList,
     itemsInRow: 4
   },
   mounted() {

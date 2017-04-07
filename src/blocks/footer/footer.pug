@@ -5,6 +5,8 @@ include ../app-social-button/app-social-button
 include ../app-thumbnail/app-thumbnail
 include ../app-button/app-button
 include ../app-icon/app-icon
+include ../app-copyright/app-copyright
+include ../app-link-list/app-link-list
 
 mixin footer()
   footer.footer&attributes(attributes)
@@ -39,4 +41,8 @@ mixin footer()
             app-icon(:name='"arrow"', :width='12', :height='20').footer__button-up-icon
     .footer__bottom
       +container()
-        span footer bottom
+        .footer__wrap
+          .footer__copyright
+            app-copyright(:symbol='"&copy;"', :year='"2015"', :text='"journalblog.com"')
+          .footer__link-list
+            app-link-list(:links='footerLinkList')
