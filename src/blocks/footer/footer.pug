@@ -17,7 +17,7 @@ mixin footer()
             app-list.app-list--light(:title='"instagram"')
             ul.footer__gallery
               li.footer__gallery-item(v-for='item in instagramGallery')
-                app-thumbnail(:src='item.src')
+                app-thumbnail(:src='item.img')
           .footer__col
             app-list.app-list--light(:title='"Recent posts"', :items='recentPosts')
           .footer__col

@@ -292,12 +292,42 @@ const socialButtons = [
 ];
 
 const instagramGallery = [
-  {src: 'https://satyr.io/300x300/'},
-  {src: 'https://satyr.io/100x100/'},
-  {src: 'https://satyr.io/100x100/'},
-  {src: 'https://satyr.io/100x100/'},
-  {src: 'https://satyr.io/100x100/'},
-  {src: 'https://satyr.io/100x100/'}
+  {
+    img: {
+      name: 'instagram1',
+      widht: [300]
+    }
+  },
+  {
+    img: {
+      name: 'instagram2',
+      widht: [300]
+    }
+  },
+  {
+    img: {
+      name: 'instagram3',
+      widht: [300]
+    }
+  },
+  {
+    img: {
+      name: 'instagram4',
+      widht: [300]
+    }
+  },
+  {
+    img: {
+      name: 'instagram5',
+      widht: [300]
+    }
+  },
+  {
+    img: {
+      name: 'instagram6',
+      widht: [300]
+    }
+  }
 ];
 
 const footerLinkList = [

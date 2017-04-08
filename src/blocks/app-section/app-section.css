@@ -71,6 +71,7 @@
 .section--subscription {
   padding-top: 2.813em; /* 45/16 */
   padding-bottom: 4.063em; /* 65/16 */
+  border-bottom: 1px solid rgba(255, 255, 255, .15);
   background-image: var(--tripleGradient);
 }
 
