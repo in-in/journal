@@ -1,11 +1,14 @@
 .footer {
   padding-top: 4.125em; /* 66/16 */
-  background-color: #39447c;
+  background-image: var(--gradient), url(../images/bg-footer_500.jpg);
+  background-position: center;
+  background-size: cover;
 
   &__bottom {
     display: flex;
     align-items: center;
-    height: 5.313em; /* 85/16 */
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   &__wrap {
@@ -174,6 +177,27 @@
     color: var(--calmColor);
     font-size: .75em; /* 12/16 */
     line-height: 2;
+  }
+}
+
+@each $i1, $i2, $i3 in (500, 800, 1050, 1920), (1000, 1600, 2100, 3840), (1500, 2400, 3150, 5760) {
+
+  @media (width >= $(i1)px) {
+    .footer {
+      background-image: var(--gradient), url('../images/bg-footer_$(i1).jpg');
+    }
+  }
+
+  @media (width >= $(i1)px) and (min-resolution: 2dppx) {
+    .footer {
+      background-image: var(--gradient), url('../images/bg-footer_$(i2)@2x.jpg');
+    }
+  }
+
+  @media (width >= $(i1)px) and (min-resolution: 3dppx) {
+    .footer {
+      background-image: var(--gradient), url('../images/bg-footer_$(i3)@3x.jpg');
+    }
   }
 }
 
