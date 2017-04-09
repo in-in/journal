@@ -12,10 +12,12 @@ import colorFunction from 'postcss-color-function';
 import eachLoop from 'postcss-each';
 import mqpacker from 'css-mqpacker';
 import csso from 'postcss-csso';
+import ancestors from 'postcss-nested-ancestors';
 import nesting from 'postcss-nesting';
 
 const processors = [
   atImport({glob: true}),
+  ancestors(),
   nesting({
     bubble: ['each']
   }),
