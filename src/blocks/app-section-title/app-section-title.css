@@ -47,7 +47,7 @@
       display: none;
     }
 
-    & ^&__text {
+    ^&__text {
       position: static;
       color: var(--whiteColor);
       transform: none;
@@ -55,7 +55,7 @@
   }
 
   &--light {
-    & ^&__text {
+    ^&__text {
       color: var(--whiteColor);
     }
   }
