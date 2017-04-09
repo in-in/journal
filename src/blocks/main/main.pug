@@ -59,7 +59,7 @@ mixin main()
     //- section--categories
     app-section(:title='true').section--categories
       template(slot='header')
-        app-section-title(:title='"categories"')
+        app-section-title(:title='"categories"').section-title--light
       template(slot='body')
         template(v-for='categorie in categoriesList')
           card(

@@ -1,7 +1,8 @@
 /* section--latest-posts */
 
 .section--latest-posts {
-  padding-top: 6.1586vw;
+  padding-top: 5em; /* 80/16 */
+  padding-bottom: 3.375em; /* 54/16 */
   background-color: var(--sectionBg);
 }
 
