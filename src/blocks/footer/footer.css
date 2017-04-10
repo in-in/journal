@@ -128,7 +128,11 @@
 
     &-item {
       width: 29.4118%;
-      margin-bottom: 5.2941%;
+      margin-bottom: 5.2941vw;
+
+      @media (--1050) {
+        margin-bottom: 1.5385vw;
+      }
     }
   }
 

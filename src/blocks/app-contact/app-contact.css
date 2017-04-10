@@ -5,6 +5,7 @@
 
   &__icon {
     min-width: 1.1em;
+    width: 1.1em;
     margin-right: .625em; /* 10/16 */
     padding-top: .188em; /* 3/16 */
     fill: currentColor;
