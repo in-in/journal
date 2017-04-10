@@ -69,8 +69,13 @@ mixin main()
             .card__image(slot='card-image')
               app-picture(:img='categorie.img')
             template(slot='card-tag') {{categorie.category}}
+            h4.card__title.hide(slot='card-title') {{categorie.category}}
     //- section--posts-lists
-    app-section.section--posts-lists
+    app-section(:title='true').section--posts-lists
+      template(slot='header')
+        app-section-title(
+          :title='"Posts lists"',
+          :nobg='true').section-title--simple.hide
       template(slot='body')
         .section__list
           app-list(:title='"Popular posts"', :items='popularPosts')

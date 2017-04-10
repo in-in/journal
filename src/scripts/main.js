@@ -1,3 +1,4 @@
+
 const carouselContent = [
   {
     type: 'horizontal',
@@ -155,28 +156,28 @@ const popularPosts = [
   {
     title: 'Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.',
     date: {
-      datetime: '2015-21-08',
+      datetime: '2015-08-21',
       time: 'August 21 2015'
     }
   },
   {
     title: 'He was still hurriedly thinking all this through, unable to decide to get out of the bed, when the clock struck quarter to seven',
     date: {
-      datetime: '2015-21-08',
+      datetime: '2015-08-21',
       time: 'August 22 2015'
     }
   },
   {
     title: 'As if from deep inside him, there was a painful and uncontrollable squeaking mixed in with it',
     date: {
-      datetime: '2015-23-08',
+      datetime: '2015-08-23',
       time: 'August 23 2015'
     }
   },
   {
     title: 'The first thing he wanted to do was to get up in peace without being disturbed, to get dressed, and most of all to have his breakfast.',
     date: {
-      datetime: '2015-24-08',
+      datetime: '2015-08-24',
       time: 'August 24 2015'
     }
   }
@@ -186,28 +187,28 @@ const newPosts = [
   {
     title: 'It was a simple matter to throw off the covers',
     date: {
-      datetime: '2015-15-07',
+      datetime: '2015-07-15',
       time: 'July 15 2015'
     }
   },
   {
     title: 'The first thing he wanted to do was get the lower part',
     date: {
-      datetime: '2015-16-07',
+      datetime: '2015-07-16',
       time: 'July 16 2015'
     }
   },
   {
     title: 'At the same time, though, he did not forget to remind himself that calm',
     date: {
-      datetime: '2015-17-07',
+      datetime: '2015-07-17',
       time: 'July 17 2015'
     }
   },
   {
     title: 'It took just as much effort to get back to where he had been earlier',
     date: {
-      datetime: '2015-18-07',
+      datetime: '2015-07-18',
       time: 'July 18 2015'
     }
   }
@@ -217,28 +218,28 @@ const mostCommentedPosts = [
   {
     title: 'The first thing he wanted to do was get the lower part of his body out of the bed, but he had never seen this lower part, and could not imagine what it looked like',
     date: {
-      datetime: '2015-21-09',
+      datetime: '2015-09-21',
       time: 'September 21 2015'
     }
   },
   {
     title: 'So then he tried to get the top part of his body out of the bed first, carefully turning his head to the side',
     date: {
-      datetime: '2015-21-09',
+      datetime: '2015-09-22',
       time: 'September 22 2015'
     }
   },
   {
     title: 'It took just as much effort to get back to where he had been earlier, but when he lay there sighing',
     date: {
-      datetime: '2015-23-09',
+      datetime: '2015-09-23',
       time: 'September 23 2015'
     }
   },
   {
     title: 'At times like this he would direct his eyes to the window and look out as clearly as he could',
     date: {
-      datetime: '2015-24-09',
+      datetime: '2015-09-24',
       time: 'September 24 2015'
     }
   }
@@ -248,21 +249,21 @@ const recentPosts = [
   {
     title: 'Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.',
     date: {
-      datetime: '2015-21-08',
+      datetime: '2015-08-21',
       time: 'March 21 2017'
     }
   },
   {
     title: 'He was still hurriedly thinking all this through, unable to decide to get out of the bed, when the clock struck quarter to seven',
     date: {
-      datetime: '2015-21-08',
+      datetime: '2015-08-22',
       time: 'March 22 2017'
     }
   },
   {
     title: 'As if from deep inside him, there was a painful and uncontrollable squeaking mixed in with it',
     date: {
-      datetime: '2015-23-08',
+      datetime: '2015-08-23',
       time: 'March 23 2017'
     }
   }
