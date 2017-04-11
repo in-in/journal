@@ -43,6 +43,7 @@
 
   @media (--1050) {
     max-width: 77.6316%;
+    width: 77.6316%;
     text-align: left;
   }
 }
@@ -64,5 +65,6 @@
 
   @media (--1050) {
     max-width: 20.3947%;
+    width: 20.3947%;
   }
 }
