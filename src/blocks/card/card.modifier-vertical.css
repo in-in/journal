@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-width: 230px;
+  min-width: 14.375em; /* 230/16 */
   max-height: none;
   width: 20.7852vw;
   height: 100%;
