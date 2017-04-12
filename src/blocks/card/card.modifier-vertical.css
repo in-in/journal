@@ -2,14 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-width: 14.375em; /* 230/16 */
-  max-height: none;
+  min-width: 230px;
   width: 20.7852vw;
-  height: 100%;
   overflow: hidden;
   margin: .6em;
   box-shadow: 0 0 .182em .006em rgba(0, 0, 0, .32);
   font-size: .875em; /* 14/16 */
+
+  @media (--1050) {
+    margin: 0;
+    margin-bottom: 1.75em;
+    font-size: 1em;
+  }
 }
 
 .card--vertical .card__image {
@@ -70,12 +74,4 @@
 
 .card--short .card__desc {
   height: 6em;
-}
-
-@media (--1050) {
-  .card--vertical {
-    margin: 0;
-    margin-bottom: 1.75em;
-    font-size: 1em;
-  }
 }
