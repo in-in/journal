@@ -4,17 +4,15 @@ Vue.component('carousel', {
     return {
       index: 0,
       itemsList: [],
-      direction: null,
-      baz: []
+      direction: null
     };
   },
   mounted() {
     this.itemsList = this.$children.filter(element => {
-      if (element._name === '<CarouselItem>') {
+      if (element.name !== 'arrow') {
         return element;
       }
     });
-
     this.itemsList.forEach((item, i) => {
       item.index = i;
     });

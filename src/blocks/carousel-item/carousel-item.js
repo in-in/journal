@@ -1,5 +1,6 @@
 Vue.component('carousel-item', {
   template: '#carousel-item',
+  name: 'foobar',
   data() {
     return {
       index: 0
