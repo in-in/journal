@@ -12,13 +12,19 @@ import watch from './watch';
 const copy = () => {
   return gulp.src(paths.assets.src)
     .pipe(gulp.dest(paths.assets.dist));
-}
+};
 
-gulp.task('default',
+gulp.task('build',
   gulp.series(
     clean,
     gulp.parallel(images, svgSprite, copy),
-    gulp.parallel(templates, styles, scripts, lib),
+    gulp.parallel(templates, styles, scripts, lib)
+  )
+);
+
+gulp.task('default',
+  gulp.series(
+    'build',
     gulp.parallel(server, watch)
   )
 );

@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "gulp",
+    "build": "gulp build",
     "ncu": "ncu"
   },
   "devDependencies": {
