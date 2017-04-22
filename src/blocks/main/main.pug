@@ -18,7 +18,7 @@ mixin main()
           .card__image(slot='card-image')
             app-picture(:img='slide.img')
           template(slot='card-tag') {{slide.category}}
-          h4.card__title(slot='card-title') {{slide.title}}
+          p.card__title(slot='card-title') {{slide.title}}
           p.card__desc(slot='card-desc') {{slide.desc}}
           .card__button-group(slot='card-buttons')
             app-button(slot='card-buttons', :hide-text='false', ).card__button.card__button-read-more
@@ -40,7 +40,7 @@ mixin main()
             .card__image(slot='card-image')
               app-picture(:img='post.img')
             template(slot='card-tag') {{post.category}}
-            h4.card__title(slot='card-title') {{post.title}}
+            p.card__title(slot='card-title') {{post.title}}
             p.card__desc(slot='card-desc') {{post.desc}}
             .card__button-group(slot='card-buttons')
               app-button(slot='card-buttons').card__button.card__button-like
@@ -69,7 +69,7 @@ mixin main()
             .card__image(slot='card-image')
               app-picture(:img='categorie.img')
             template(slot='card-tag') {{categorie.category}}
-            h4.card__title.hide(slot='card-title') {{categorie.category}}
+            p.card__title.hide(slot='card-title') {{categorie.category}}
     //- section--posts-lists
     app-section(:title='true').section--posts-lists
       template(slot='header')

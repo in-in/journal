@@ -2,7 +2,7 @@ block append templates
   template#app-list
     aside.app-list
       .app-list__header
-        h4.app-list__title {{ title }}
+        h3.app-list__title {{ title }}
       ul.app-list__items(v-if='items')
         li.app-list__item(v-for='item in items')
           a.app-list__item-link(href='#')
