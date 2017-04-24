@@ -4,15 +4,25 @@ block append templates
       button(
           type='button',
           @click.prevent='prev',
-          aria-hidden='true'
+          title='Previous slide'
         ).carousel__controls.carousel__controls--prev
         i.carousel__controls-wrap
-          app-icon(:name='"arrow"', :width='12', height='20').carousel__icon.carousel__icon--prev
+          app-icon(
+            :name='"arrow"', 
+            :width='12', 
+            :height='20',
+            aria-hidden='true'
+            ).carousel__icon.carousel__icon--prev
       slot
       button(
           type='button',
           @click.prevent='next',
-          aria-hidden='true'
+          title='Next slide'
         ).carousel__controls.carousel__controls--next
         i.carousel__controls-wrap
-          app-icon(:name='"arrow"', :width='12', height='20').carousel__icon.carousel__icon--next
+          app-icon(
+            :name='"arrow"', 
+            :width='12',
+            :height='20',
+            aria-hidden='true'
+            ).carousel__icon.carousel__icon--next
