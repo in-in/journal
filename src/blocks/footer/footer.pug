@@ -1,10 +1,7 @@
 include ../container/container
-include ../app-list/app-list
 include ../app-contact/app-contact
 include ../app-social-button/app-social-button
 include ../app-thumbnail/app-thumbnail
-include ../app-button/app-button
-include ../app-icon/app-icon
 include ../app-copyright/app-copyright
 include ../app-link-list/app-link-list
 
@@ -33,7 +30,11 @@ mixin footer()
                 app-contact(:type='"email"', :contact='"info@journalblog.com"')
             ul.footer__social-button-list
               li.footer__social-button-item(v-for='button in socialButtons')
-                app-social-button(:icon='button.icon', :link='button.link')
+                app-social-button(
+                  :icon='button.icon',
+                  :link='button.link',
+                  :title='button.title'
+                  )
       .footer__button-wrap
         app-button(@click.native='goToUp').footer__button-up
           | Go to top

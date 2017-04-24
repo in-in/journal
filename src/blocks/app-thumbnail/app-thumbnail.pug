@@ -1,6 +1,4 @@
-include ../app-picture/app-picture
-
 block append templates
   template#app-thumbnail
-    a.app-thumbnail(href='#')
-      app-picture(:img='src').app-thumbnail__image
+    a.app-thumbnail(href='#', role='button', aria-label='Thumbnail' )
+      app-picture(:img='src', aria-hidden='true').app-thumbnail__image

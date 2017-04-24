@@ -1,4 +1,3 @@
-
 const carouselContent = [
   {
     type: 'horizontal',
@@ -271,22 +270,27 @@ const recentPosts = [
 
 const socialButtons = [
   {
+    title: 'Facebook',
     icon: 'facebook',
     link: 'https://www.facebook.com/'
   },
   {
+    title: 'Google+',
     icon: 'google-plus',
     link: 'https://plus.google.com'
   },
   {
+    title: 'LinkedIn',
     icon: 'linkedin',
     link: 'https://www.linkedin.com/'
   },
   {
+    title: 'Pinterest',
     icon: 'pinterest',
     link: 'https://www.pinterest.com/'
   },
   {
+    title: 'Twitter',
     icon: 'twitter',
     link: 'https://twitter.com'
   }

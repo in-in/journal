@@ -1,9 +1,10 @@
 block append templates
   template#main-menu
     nav.menu
-      ul.menu__list
+      ul.menu__list(role='menu')
         li(
             v-for='(i, index) in items',
-            :style='{order: index + 1}'
+            :style='{order: index + 1}',
+            role='none'
           ).menu__item
-          a(href='#').menu__link {{ i[0] }}
+          a(href='#', role='menuitem').menu__link {{ i[0] }}

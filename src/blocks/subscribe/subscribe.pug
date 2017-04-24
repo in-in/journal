@@ -2,5 +2,6 @@ block append templates
   template#subscribe
     form.subscribe(action='#', method='post')
       .subscribe__field
-        input.subscribe__email(type="email", placeholder="Please enter your email", required)
+        label.hide(for='subscribe-email') Please provide us with your email address:
+        input#subscribe-email.subscribe__email(type="email", placeholder="Please enter your email", required)
         input.subscribe__submit(type="submit", value="Subscribe now")
